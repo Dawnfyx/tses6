@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>slide</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+</head>
+
+<body>
+    <div>
+    <!--轮播-->
+        <ul id="js-slide" class="slide-list">
+            <li class="item">
+                <img src="images/pic_01.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_02.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_03.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_04.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_05.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_06.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_07.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_08.jpg" alt="">
+            </li>
+            <li class="item">
+                <img src="images/pic_09.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <script>
+
+    var firstA = new slideSet({
+        id: "js-slide", 
+        opacity: 0.9,
+        width: 200,
+        Awidth: 500,
+        scale: 0.9,
+        autoTime: 2000//轮播时长 默认5000
+    })
+
+    </script>
+</body>
+</html>

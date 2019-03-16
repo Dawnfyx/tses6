@@ -1,0 +1,99 @@
+body {
+    font-family: microsoft yahei, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+li,
+ul,
+p,
+dl,
+dt,
+dd {
+    padding: 0;
+    margin: 0
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    text-decoration: none;
+    list-style: none
+}
+
+.lf {
+    float: left
+}
+
+.rt {
+    float: right
+}
+
+.clear {
+    clear: both
+}
+
+.ovh {
+    overflow: hidden
+}
+
+a {
+    color: #303030;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none
+}
+
+
+
+/* start */
+.slide-list {
+    background: #fff;
+    width: 80%;
+    height: 240px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: default;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    overflow: hidden;
+    margin: 60px auto 0;
+    /* transform: rotate(-90deg); */
+}
+
+
+.slide-list li.item{
+    position: absolute;
+    width: inherit;
+    height: auto;
+    text-align: center
+}
+.slide-list li img{
+    width: inherit;
+    height: auto;
+}
