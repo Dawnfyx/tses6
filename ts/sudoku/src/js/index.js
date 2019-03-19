@@ -1,17 +1,17 @@
+const toolkit = require("./toolkit");
 
-function makeRow( v = 0){
-    const array = new Array(9);
-    array.fill(v);
-    return array;
-}
+const matrix = toolkit.makeMatrix();
 
-function makeMatrix( v = 0 ){
-    // const array = new Array(9);
-    // array.fill(makeRow(v));
-    // return array;
-    return Array.from({ length: 9}).map( () => makeRow(v));
-}
+console.log(matrix);
+console.log("**************************************************");
+//九宫格 测试代码
+// const a = toolkit.makeMatrix();
+// a[0][1] = 2;
+// console.log(a);
 
-const a = makeMatrix();
-a[0][1] = 2;
+//洗牌算法 测试代码
+const  a = Array.from({ length: 9}, (v, i) => i);
 console.log(a);
+console.log(toolkit.shuffle(a));
+
+
