@@ -1,3 +1,5 @@
+// 矩阵工具
+
 const matrixToolkit = {
 
 
@@ -26,4 +28,21 @@ const matrixToolkit = {
 
 };
 
-module.exports = matrixToolkit;
+
+// 宫坐标工具
+const boxToolit = {
+
+}
+
+
+module.exports = class Toolkit{
+
+    static get matrix(){
+        return matrixToolkit;
+    }
+
+    static get box (){
+        return boxToolit;
+    }
+
+}
