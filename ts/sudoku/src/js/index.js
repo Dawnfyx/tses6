@@ -1,15 +1,15 @@
-const toolkit = require("./toolkit");
+const Toolkit = require("./core/toolkit");
 
 class Grid{
     constructor(container){
         this._$container = container;
     }
     build(){
-        const matrix = toolkit.makeMatrix();
+        const matrix = Toolkit.matrix.makeMatrix();
 
         const rowGroupClasses = ["row_g_top", "row_g_middle", "row_g_bottom"];
         const colGroupClasses = ["col_g_left", "col_g_center", "col_g_right"];
-        
+
         const $cells = matrix.map(rowValues => rowValues.map((cellValue, colIndex) => {
             return $("<span>")
                 .addClass(colGroupClasses[colIndex % 3])
@@ -42,7 +42,7 @@ grid.build();
 grid.layout();
 
 console.log("**************************************************");
-const matrix = toolkit.makeMatrix();
+const matrix = Toolkit.matrix.makeMatrix();
 console.log(matrix);
 console.log("**************************************************");
 
