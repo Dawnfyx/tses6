@@ -1,6 +1,7 @@
 const Grid = require("./ui/grid");
 const PopupNumbers = require("./ui/popupnumbers");
 
+// 难度在sudoku里调
 const grid = new Grid($("#container"));
 grid.build();
 grid.layout();
@@ -25,6 +26,9 @@ $("#rebuild").on("click", e => {
     grid.rebuild();
 });
 
+window.onload = function () {
+    grid.init();
+}
 
 // console.log("**************************************************");
 // const matrix = Toolkit.matrix.makeMatrix();

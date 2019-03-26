@@ -47,6 +47,7 @@
 	const Grid = __webpack_require__(1);
 	const PopupNumbers = __webpack_require__(6);
 	
+	// 难度在sudoku里调
 	const grid = new Grid($("#container"));
 	grid.build();
 	grid.layout();
@@ -71,6 +72,9 @@
 	    grid.rebuild();
 	});
 	
+	window.onload = function () {
+	    grid.init();
+	}
 	
 	// console.log("**************************************************");
 	// const matrix = Toolkit.matrix.makeMatrix();
@@ -102,6 +106,11 @@
 	class Grid{
 	    constructor(container){
 	        this._$container = container;
+	    }
+	    init(){
+	        if (/(windows)/i.test(navigator.userAgent)) {
+	            location.href = 'pc.html';
+	        }
 	    }
 	    build(){
 	        const sudoku = new Sudoku();
@@ -539,16 +548,37 @@
 	            this.hide();
 	
 	        })
+	
+	        // $panel.width();
+	        // $panel.height();
+	        // console.log("$panel", $panel);
 	    }
 	
 	    popup($cell) {
+	
+	        // if(parseInt(dragDiv.style.left) >= window.innerWidth - parseInt(dragDiv.style.width)){
+	        //     dragDiv.style.left = window.innerWidth - parseInt(dragDiv.style.width) + "px";
+	        // }
+	        //
+	        // if(parseInt(dragDiv.style.top) >= window.innerHeight - parseInt(dragDiv.style.height)){
+	        //     dragDiv.style.top = window.innerHeight - parseInt(dragDiv.style.height) + "px";
+	        // }
+	
 	        this._$targetCell = $cell;
 	        const {left, top} = $cell.position();
-	        this._$panel.css({
-	            left: `${left}px`,
-	            top: `${top}px`
-	        })
-	            .show()
+	        // debugger
+	        if(parseInt(left) >= window.innerWidth - parseInt(this._$panel.width())){
+	            this._$panel.css({
+	                left: `${window.innerWidth- parseInt(this._$panel.width())}px`,
+	                top: `${top}px`
+	            }).show()
+	        } else{
+	            this._$panel.css({
+	                left: `${left}px`,
+	                top: `${top}px`
+	            }).show()
+	        }
+	
 	    }
 	
 	    hide() {

@@ -33,16 +33,29 @@ module.exports = class PopupNumbers {
             this.hide();
 
         })
+
     }
 
     popup($cell) {
+
         this._$targetCell = $cell;
         const {left, top} = $cell.position();
-        this._$panel.css({
-            left: `${left}px`,
-            top: `${top}px`
-        })
-            .show()
+        if(parseInt(left) >= window.innerWidth - parseInt(this._$panel.width())){
+
+            this._$panel.css({
+                left: `${window.innerWidth- parseInt(this._$panel.width())}px`,
+                top: `${top}px`
+            }).show()
+
+        } else{
+
+            this._$panel.css({
+                left: `${left}px`,
+                top: `${top}px`
+            }).show()
+
+        }
+
     }
 
     hide() {

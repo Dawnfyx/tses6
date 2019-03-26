@@ -7,6 +7,11 @@ class Grid{
     constructor(container){
         this._$container = container;
     }
+    init(){
+        if (/(windows)/i.test(navigator.userAgent)) {
+            location.href = 'pc.html';
+        }
+    }
     build(){
         const sudoku = new Sudoku();
         sudoku.make();
