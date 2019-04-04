@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改页面</title>
+</head>
+<body>
+<form action="/users/update" method="post">
+    <input type="hidden" value="<%= result[0].id %>" name="id"><br>
+    公司：<input type="text" name="company" value="<%= result[0].company %>"><br>
+    负责人：<input type="text" name="perMain" value="<%= result[0].perMain %>"><br>
+    合同：<input type="text" name="tpyContract" value="<%= result[0].tpyContract %>"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

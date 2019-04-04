@@ -40,10 +40,12 @@ module.exports = class PopupNumbers {
 
         this._$targetCell = $cell;
         const {left, top} = $cell.position();
-        if(parseInt(left) >= window.innerWidth - parseInt(this._$panel.width())){
+        const minWidth = window.innerWidth - parseInt(this._$panel.width());
+
+        if(parseInt(left) >= minWidth){
 
             this._$panel.css({
-                left: `${window.innerWidth- parseInt(this._$panel.width())}px`,
+                left: `${minWidth}px`,
                 top: `${top}px`
             }).show()
 

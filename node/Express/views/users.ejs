@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>user页面</h1>
+<h3><a href="/users/add">添加用户</a></h3>
+<br>
+<h3>查询</h3>
+<form action="/users/search" method="post">
+    id：<input type="text" name="s_id" value="<%= result.id %>"><br>
+    公司：<input type="text" name="s_company" value="<%= result.company %>"><br>
+    负责人：<input type="text" name="s_perMain" value="<%= result.perMain %>"><br>
+    合同：<input type="text" name="s_tpyContract" value="<%= result.tpyContract %>"><br>
+    <input type="submit" value="查询">
+</form>
+<br>
+<br>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>公司</th>
+        <th>负责人</th>
+        <th>合同</th>
+        <th>操作</th>
+    </tr>
+    <% for(var i = 0; i < result.length; i++) {%>
+    <tr>
+        <td><%= result[i].id %></td>
+        <td><%= result[i].company %></td>
+        <td><%= result[i].perMain %></td>
+        <td><%= result[i].tpyContract %></td>
+        <td>
+            <a href="/users/del/<%= result[i].id %>">删除</a>
+            <a href="/users/toUpdate/<%= result[i].id %>">修改</a>
+        </td>
+    </tr>
+    <% } %>
+</table>
+</body>
+</html>

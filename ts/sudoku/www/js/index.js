@@ -549,34 +549,27 @@
 	
 	        })
 	
-	        // $panel.width();
-	        // $panel.height();
-	        // console.log("$panel", $panel);
 	    }
 	
 	    popup($cell) {
 	
-	        // if(parseInt(dragDiv.style.left) >= window.innerWidth - parseInt(dragDiv.style.width)){
-	        //     dragDiv.style.left = window.innerWidth - parseInt(dragDiv.style.width) + "px";
-	        // }
-	        //
-	        // if(parseInt(dragDiv.style.top) >= window.innerHeight - parseInt(dragDiv.style.height)){
-	        //     dragDiv.style.top = window.innerHeight - parseInt(dragDiv.style.height) + "px";
-	        // }
-	
 	        this._$targetCell = $cell;
 	        const {left, top} = $cell.position();
-	        // debugger
-	        if(parseInt(left) >= window.innerWidth - parseInt(this._$panel.width())){
+	        const minWidth = window.innerWidth- parseInt(this._$panel.width());
+	        if(parseInt(left) >= minWidth){
+	
 	            this._$panel.css({
-	                left: `${window.innerWidth- parseInt(this._$panel.width())}px`,
+	                left: `${minWidth}px`,
 	                top: `${top}px`
 	            }).show()
+	
 	        } else{
+	
 	            this._$panel.css({
 	                left: `${left}px`,
 	                top: `${top}px`
 	            }).show()
+	
 	        }
 	
 	    }
