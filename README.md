@@ -6,10 +6,10 @@
 ## node
 
 ### some node service
-#### Express 一个增删改查
+#### Express 简单的增删改查
 #### Crawler 一个node爬虫
 
 
-## ts typescript
+## typescript
 
 #### sudoku  数独小游戏
