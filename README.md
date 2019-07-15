@@ -13,3 +13,9 @@
 ## typescript
 
 #### sudoku  数独小游戏
+
+
+## WeChat
+
+#### 微信小程序 小游戏
+
