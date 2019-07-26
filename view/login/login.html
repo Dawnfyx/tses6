@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--  login section start  -->
+        <div class="content_login">
+            <div class="content_login_regist">
+                <div class="logo_item">
+                    <img src="img/loginHeadImg.png" alt="logo">
+                    <p class="title">fyx</p>
+                </div>
+                <div class="input_item">
+                    <i class="icon icon_user"></i>
+                    <input type="text" placeholder="填写账号" id="inputUser" />
+                </div>
+                <div class="input_item">
+                    <i class="icon icon_pass"></i>
+                    <input type="text" placeholder="填写密码" id="inputPass" />
+                </div>
+                <div class="checkbox_item">
+                    <label>
+                        <input type="checkbox" /> 记住密码
+                    </label>
+                </div>
+                <button class="btn_sumbit btn_login" id="userLoginBtn">
+                    立&nbsp;即&nbsp;登&nbsp;录
+                </button>
+            </div>
+            <div class="content_login_other">
+                <button class="btn_sumbit btn_weixin" id="weixinLoginBtn">
+                    微&nbsp;信&nbsp;登&nbsp;录
+                </button>
+                <button class="btn_sumbit btn_send" id="sendLoginBtn" data-target="sendModal">
+                    短&nbsp;信&nbsp;验&nbsp;证
+                </button>
+            </div>
+            <div class="content_zhan_line">
+                <span class="line fl"></span>
+                <span class="words">知行合一&nbsp;&nbsp;&nbsp;&nbsp;敬天爱人</span>
+                <span class="line fr"></span>
+            </div>
+        </div>
+        <!-- login section end -->
+
+        <!-- modal start -->
+        <div id="sendModal" class="modal fade" style="display: none;">
+            <div class="modal_dialog">
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <div class="title">
+                            短信验证
+                        </div>
+                        <div class="btn_colse"></div>
+                    </div>
+                    <div class="modal_body">
+                        <div class="input_item">
+                            <i class="icon icon_user"></i>
+                            <input type="text" placeholder="填写手机号" id="inputPhone" />
+                        </div>
+                        <div class="input_item">
+                            <p class="img_verify">
+                                <img id="refreshPhoto" src="img/btn_colse.png" alt="验证码">
+                            </p>
+                            <input type="text" placeholder="填写图形验证码" id="inputImgCode" />
+                        </div>
+                        <div class="input_item">
+                            <button id="btnVerify" class="btn_verify">获取验证码</button>
+                            <input type="text" placeholder="填写短信验证码" />
+                        </div>
+                        <button class="btn_sumbit btn_login mg_t0" id="phoneLoginBtn">
+                            立&nbsp;即&nbsp;登&nbsp;录
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_backdrop"></div>
+        </div>
+        <!-- modal end -->
+    </div>
+    <script src="js/login_verify.js"></script>
+</body>
+
+</html>
