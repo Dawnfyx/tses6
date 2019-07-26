@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="jquery/jquery.min.js"></script>
+    <script src="layer/layer.js"></script>
+</head>
+
+<body>
+    <div class="section-bottom">
+        <div class="box-left" id="js-box-left">
+            <!--<div class="show-cell" data-isShow="false">-->
+                <!--<div class="drag-before drag-box-obj01"></div>-->
+                <!--<div class="drag-after drag-obj01" data-drag="true" data-port="1">1</div>-->
+            <!--</div>-->
+            <div class="show-cell" data-isShow="false">
+                <div class="drag-before drag-box-obj02"></div>
+                <div class="drag-after drag-obj02" data-drag="true" data-port="2" data-astrict="obj07|obj03">2</div>
+            </div>
+            <div class="show-cell" data-isShow="false">
+                <div class="drag-before drag-box-obj03"></div>
+                <div class="drag-after drag-obj03" data-drag="true" data-port="3">3</div>
+            </div>
+            <div class="show-cell" data-isShow="false">
+                <div class="drag-before drag-box-obj04"></div>
+                <div class="drag-after drag-obj04" data-drag="true" data-port="4" data-astrict="obj06">4</div>
+            </div>
+            <div class="show-cell" data-isShow="false">
+                <div class="drag-before drag-box-obj05"></div>
+                <div class="drag-after drag-obj05" data-drag="true" data-port="5" data-astrict="obj04">5</div>
+            </div>
+            <div class="show-cell" data-isShow="false">
+                <div class="drag-before drag-box-obj06"></div>
+                <div class="drag-after drag-obj06" data-drag="true" data-port="6" data-astrict="obj02">6</div>
+            </div>
+            <div class="show-cell" data-isShow="false">
+                <div class="drag-before drag-box-obj07"></div>
+                <div class="drag-after drag-obj07" data-drag="true" data-port="7">7</div>
+            </div>
+        </div>
+        <div class="box-center" id="js-box-center">
+            <div class="drag-help drag-obj01" data-status="true" data-port="1" style="opacity: 1">1</div>
+            <div class="drag-help drag-obj02" data-status="false" data-port="2">2</div>
+            <div class="drag-help drag-obj03" data-status="false" data-port="3">3</div>
+            <div class="drag-help drag-obj04" data-status="false" data-port="4">4</div>
+            <div class="drag-help drag-obj05" data-status="false" data-port="5">5</div>
+            <div class="drag-help drag-obj06" data-status="false" data-port="6">6</div>
+            <div class="drag-help drag-obj07" data-status="false" data-port="7">7</div>
+        </div>
+    </div>
+    <script src="jquery/dragPuzzle.js"></script>
+</body>
+
+</html>

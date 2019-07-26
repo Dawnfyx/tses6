@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8d333ec0-344e-4387-8850-310c05ca7a12" name="asdf" url="http://192.168.1.159:8081/metrotes">
+        <fileTransfer port="0" mountedRoot="E:\work\2019\06Month\metrotes" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

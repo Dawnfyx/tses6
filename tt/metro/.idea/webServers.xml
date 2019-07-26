@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3bee162c-e20d-4d9a-bf60-1d14d92ec6f5" name="局网访问" url="http://192.168.1.159:8081/metrotest2">
+        <fileTransfer port="0" mountedRoot="E:\work\2019\05Month\metrotest2" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

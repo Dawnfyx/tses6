@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地铁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="big-bg">
+    <div class="wrapper" id="wrapper">
+        <div class="header">
+            <div class="title">
+                <img src="images/mto-title.png" alt="">
+            </div>
+            <div class="navbar">
+                <ul id="js-navbar-lu">
+                    <li><a href="javascript:;"><img src="images/mto-nav-1-a.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-2.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-3.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-4.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-5.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-6.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-7.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-8.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-9.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/mto-nav-10.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <iframe src="index-iframe.html" frameborder="0" width="1801" height="867"></iframe>
+        <div id="new-section">
+            <div class="new-title">
+                <img src="images/mto-title1.png" alt="">
+            </div>
+            <div class="news-left">
+
+            </div>
+            <div class="news-right">
+                <ul>
+                    <li><a href="javascripts:;">接触轨是将电能传输到地铁和城市轨道交通系统电力牵引车辆上的装置。</a></li>
+                    <li><a href="javascripts:;">它是一种古老的电力牵引车辆供电形式，早在1891年就有接触轨雏形的产生。</a></li>
+                    <li><a href="javascripts:;">二十世纪前半个世纪一直只使用钢接触轨，二十世纪中期以后对钢接触轨的材质进行了改进，</a></li>
+                    <li><a href="javascripts:;">形成所谓的"铁接触轨"实际上是进行了材质变化，降低了杂质，加入了提高导电性的元素。</a></li>
+                    <li><a href="javascripts:;">接触轨是将电能传输到地铁和城市轨道交通系统电力牵引车辆上的装置。</a></li>
+                    <li><a href="javascripts:;">它是一种古老的电力牵引车辆供电形式，早在1891年就有接触轨雏形的产生。</a></li>
+                </ul>
+                <div class="more">
+                    <button type="button">&nbsp;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function (win, doc) {
+
+            //导航点击文字变金
+            var jsNavBarLu = document.getElementById('js-navbar-lu');
+            jsNavBarLu.addEventListener("click", function (e) {
+                var srcString = e.target.getAttribute('src');
+                var regString =  srcString.replace(/(mto-nav-\d+)(\.png)/i, "$1-a$2");
+                e.target.setAttribute('src', regString);
+            })
+        })(window, document);
+    </script>
+</body>
+</html>

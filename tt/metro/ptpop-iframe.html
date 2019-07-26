@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="javascripts/jquery.min.js"></script>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #wrapper{
+            position: relative;
+            text-align: center;
+            background: url("images/mto-small-bg.jpg") top center no-repeat
+        }
+        #wrapper .svgline{
+            height: 730px;
+            margin: 70px 0px;
+        }
+
+        #wrapper .svgline path,
+        #wrapper .svgline polyline,
+        #wrapper .svgline line{
+            opacity: 0.5;
+        }
+
+        .layui-layer{
+            width: 500px !important;
+            background: transparent url("images/mto-layer-alert.png") center center no-repeat !important;
+            /*动画效果*/
+            -webkit-animation-duration: 1s;
+            -webkit-animation-delay: .2s;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-duration: 1s;
+            -moz-animation-delay: .2s;
+            -moz-animation-timing-function: ease;
+            -moz-animation-fill-mode: both;
+            -ms-animation-duration: 1s;
+            -ms-animation-delay: .2s;
+            -ms-animation-timing-function: ease;
+            -ms-animation-fill-mode: both;
+            animation-duration: 1s;
+            animation-delay: .2s;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+        }
+        .layui-layer .layui-layer-title{
+            display: none;
+        }
+        .layui-layer .layui-layer-content{
+            width: 500px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 22px;
+            color: #60c9ff;
+            overflow: hidden !important;
+        }
+        @-webkit-keyframes pulse {
+            0% { -webkit-transform: scale(1); }
+            50% { -webkit-transform: scale(1.1); }
+            100% { -webkit-transform: scale(1); }
+        }
+        @-moz-keyframes pulse {
+            0% { -moz-transform: scale(1); }
+            50% { -moz-transform: scale(1.1); }
+            100% { -moz-transform: scale(1); }
+        }
+        @-ms-keyframes pulse {
+            0% { -ms-transform: scale(1); }
+            50% { -ms-transform: scale(1.1); }
+            100% { -ms-transform: scale(1); }
+        }
+        @-o-keyframes pulse {
+            0% { -o-transform: scale(1); }
+            50% { -o-transform: scale(1.1); }
+            100% { -o-transform: scale(1); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .pulse {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -ms-animation-name: pulse;
+            -o-animation-name: pulse;
+            animation-name: pulse;
+        }
+
+        @-webkit-keyframes shake {
+            0%, 100% {-webkit-transform: translateX(0);}
+            10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+            20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+        }
+        @-moz-keyframes shake {
+            0%, 100% {-moz-transform: translateX(0);}
+            10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+            20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+        }
+        @-ms-keyframes shake {
+            0%, 100% {-ms-transform: translateX(0);}
+            10%, 30%, 50%, 70%, 90% {-ms-transform: translateX(-10px);}
+            20%, 40%, 60%, 80% {-ms-transform: translateX(10px);}
+        }
+        @-o-keyframes shake {
+            0%, 100% {-o-transform: translateX(0);}
+            10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+            20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+        }
+        @keyframes shake {
+            0%, 100% {transform: translateX(0);}
+            10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+            20%, 40%, 60%, 80% {transform: translateX(10px);}
+        }
+        .shake {
+            -webkit-animation-name: shake;
+            -moz-animation-name: shake;
+            -ms-animation-name: shake;
+            -o-animation-name: shake;
+            animation-name: shake;
+        }
+
+        #js-game-explain{
+            width: 490px;
+            height: 260px;
+            position: absolute;
+            top: 606px;
+            right: 0px;
+            z-index: 2;
+            background: url("images/mto-game-explain.png") center center no-repeat;
+        }
+        #js-game-explain .close-btn{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .line-explan{
+            width: 490px;
+            height: 200px;
+            padding: 20px 20px 0px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 2;
+            box-sizing: border-box;
+            background: url("images/mto-line-explain.png") center center no-repeat;
+        }
+        .line-explan ul{
+            width: 150px;
+            padding: 0px;
+            float: left;
+            text-align: left;
+        }
+        .line-explan ul li{
+
+        }
+        .line-explan ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            cursor: default;
+        }
+        .line-explan ul li a .icon-color{
+            width: 15px;
+            height: 15px;
+            display: block;
+            float: left;
+            margin-top: 8px;
+            margin-right: 5px;
+            margin-left: 20px;
+            opacity: 0.5;
+        }
+
+        #js-line-explan-box > img{
+            width: 200px;
+            height: 94px;
+            position: absolute;
+            display: none;
+        }
+        #js-line-explan-box .line1{
+            top: 140px;
+            left: 740px;
+        }
+        #js-line-explan-box .line2{
+            top: 450px;
+            left: 1045px;
+        }
+        #js-line-explan-box .line3{
+            top: 50px;
+            left: 820px;
+        }
+        #js-line-explan-box .line4{
+            top: 380px;
+            left: 1060px;
+        }
+        #js-line-explan-box .line5{
+            top: 600px;
+            left: 730px;
+        }
+        #js-line-explan-box .line6{
+            top: 230px;
+            left: 900px;
+        }
+        #js-line-explan-box .line7{
+            top: 330px;
+            left: 900px;
+        }
+        #js-line-explan-box .line8{
+            top: 300px;
+            left: 1000px;
+        }
+        #js-line-explan-box .line9{
+            top: 360px;
+            left: 900px;
+        }
+        #js-line-explan-box .line10{
+            top: 370px;
+            left: 900px;
+        }
+        #js-line-explan-box .line11{
+            top: 100px;
+            left: 770px;
+        }
+        #js-line-explan-box .line13{
+            top: 100px;
+            left: 900px;
+        }
+        #js-line-explan-box .line16{
+            top: 580px;
+            left: 1200px;
+        }
+        #js-line-explan-box .line17{
+            top: 340px;
+            left: 470px;
+        }
+
+        .game-time{
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 2;
+            background: url("images/mto-timer.png") center center no-repeat;
+            cursor: no-drop;
+            color: red;
+            font-size: 36px;
+            line-height: 50px;
+            text-align: center;
+        }
+        #LAY_layuipro{
+            height: 90px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .layui-layer-btn .layui-layer-btn0 {
+            border-color: #1275b1;
+            background-color: #122f79;
+            color: #fff;
+        }
+    </style>
+    <script src="layer/layer.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+
+    <svg class="svgline" id="svgline" data-name="svgline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1394 1071">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #b51919;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-2 {
+                    fill: none;
+                    stroke: #21b721;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-3 {
+                    fill: none;
+                    stroke: #bfbf00;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-4 {
+                    fill: none;
+                    stroke: #8b00bf;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-5 {
+                    fill: none;
+                    stroke: #be3974;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-5s {
+                     fill: none;
+                     stroke: #be3974;
+                     stroke-miterlimit: 10;
+                     stroke-width: 6pt;
+                 }
+                .cls-6 {
+                    fill: none;
+                    stroke: #bf2146;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-7 {
+                    fill: none;
+                    stroke: #bf6913;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-8 {
+                    fill: none;
+                    stroke: #13589d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-9 {
+                    fill: none;
+                    stroke: #77a1a6;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-10 {
+                    fill: none;
+                    stroke: #9a83a3;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-10s {
+                    fill: none;
+                    stroke: #9a83a3;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-11 {
+                    fill: none;
+                    stroke: #631212;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-11s {
+                    fill: none;
+                    stroke: #540f0f;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-12 {
+                    fill: none;
+                    stroke: #1b6452;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-13 {
+                    fill: none;
+                    stroke: #af7895;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-16 {
+                    fill: none;
+                    stroke: #639a99;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .cls-17 {
+                    fill: none;
+                    stroke: #946361;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .maglev {
+                    fill: none;
+                    stroke: #8b8b8b;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+                .pujiang {
+                    fill: none;
+                    stroke: #8d8d8d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 6pt;
+                }
+            </style>
+        </defs>
+
+        <path class="cls-1" data-type="soft" d="M977.5,54.5v282l48,48v25s2,19-24,18h-63l-108,106v65l-75,76"
+              transform="translate(-226.5 -5.5)"/>
+        <path class="cls-2" data-type="softfirm" d="M1386.5,658.5v-124s1-15-18-14h-168s-17-1-18-25v-33l-76-78h-518"
+              transform="translate(-226.5 -5.5)"/>
+        <path class="cls-3" data-type="soft" d="M831,598l46.5-46.5v-27l-31-34v-157c0-26,26-22,26-22h153l64-63V5.5"
+              transform="translate(-226.5 -5.5)"/>
+        <path class="cls-4" data-type="soft"
+              d="M980.5,525.5h125l39-38s7-4,7-14v-158s1-18-27-17h-46l-17,16h-189s-23-4-22,23v128l54,54s10,7,20,6h56Z"
+              transform="translate(-226.5 -5.5)"/>
+        <path class="cls-5" data-type="softfirm" d="M755.5,674.5v302s-3,30,31,29h29s33-2,27,39v31" transform="translate(-226.5 -5.5)"/>
+        <!--<path class="cls-5s" data-type="softfirm" d="M754.5,829.5l-55,53s-10,10-28,11h-63" transform="translate(-226.5 -5.5)"/>-->
+        <path class="cls-6" data-type="softfirm" d="M1330.5,65.5v169s0,20-13,28l-188,186s-3,2-3,14v118l-60,61v49s2,18-19,19h-102"
+              transform="translate(-226.5 -5.5)"/>
+        <path class="cls-7" data-type="softfirm" d="M872.5,67.5v244l70,73v184s-2,32,35,29h199l103-103" transform="translate(-226.5 -5.5)"/>
+        <path class="cls-8" data-type="softfirm" d="M1220.5,51.5v103l-88,86s-9,8-25,8h-66s-17-2-16,21v115l16,16s6,6,5,22v209h-25L944,709V838.5"
+              transform="translate(-226.5 -5.5)"/>
+        <polyline class="cls-9" data-type="softfirm"
+                  points="1393 289 1106 289 960 436 938 436 924.62 421.61 890 421.61 849 459 406 459 282 581 282 651"/>
+        <!--<path class="cls-10" data-type="firm" d="M1159.5,98.5v147l-85,85v100s-1,12-12,9h-87l-11-8h-348" transform="translate(-226.5 -5.5)"/>-->
+        <!--&lt;!&ndash;<polyline class="cls-10s" data-type="firm" points="400 382 445 382 482.13 426"/>&ndash;&gt;-->
+        <polyline class="cls-11" data-type="softfirm"
+                  points="557 80 557 254 677 378 646 426 676 459 676 703 719 703 768 726 1039 726 1039 748 1091 748"/>
+        <!--<polyline class="cls-11s" data-type="softfirm" points="368 108 512 108 557 146.67"/>-->
+        <!--<polyline class="cls-12"  points="1223 290 1223 248 989 248 906 340 799 340 751 331 740 342 742 444 765 525 765 565 716.01 565 604 528 395 528"/>-->
+        <polyline class="cls-13" data-type="firm"
+                  points="474 320 540 320 569 345 624 345 649.31 349.39 651 338 667.85 328.79 751 331 751 364 740.72 378.82 751 411 805 459 805 576 785 576 785 609 820 609 858.19 617.5 1115 617.5"/>
+        <polyline class="cls-16" data-type="touch" points="1026 517 1020 876 1112 876 1112 925 1257 925"/>
+        <polyline class="cls-17" data-type="touch" points="399 382 345 357 70 357 36 424 0 424"/>
+        <!--<line class="maglev" x1="1159" y1="653" x2="1026.5" y2="515.5"/>-->
+        <!--<path class="pujiang" d="M944,834v12.5s-1.5,36,37.5,31c0,0,51-8,45,29v106" transform="translate(-226.5 -5.5)"/>-->
+
+    </svg>
+
+    <div class="game-explain" id="js-game-explain">
+        <div class="close-btn"></div>
+    </div>
+
+    <div class="line-explan" id="js-line-explain">
+        <ul>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #CC0000;"></span>1号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #009900;"></span>2号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #F9E103;"></span>3号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #660066;"></span>4号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #CC00CC;"></span>5号线</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #FF3265;"></span>6号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #FF7F00;"></span>7号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #0066CC;"></span>8号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #95d3db;"></span>9号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #C9A7D5;"></span>10号线</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:;">&nbsp;</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #800000;"></span>11号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #E796C1;"></span>13号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #77C8C7;"></span>16号线</a></li>
+            <li><a href="javascript:;"><span class="icon-color" style="background-color: #c07774;"></span>17号线</a></li>
+        </ul>
+    </div>
+    <div class="line-explan-box" id="js-line-explan-box">
+        <img class="line1" src="images/mto-ti-line01.png" alt="">
+        <img class="line2" src="images/mto-ti-line02.png" alt="">
+        <img class="line3" src="images/mto-ti-line03.png" alt="">
+        <img class="line4" src="images/mto-ti-line04.png" alt="">
+        <img class="line5" src="images/mto-ti-line05.png" alt="">
+        <img class="line6" src="images/mto-ti-line06.png" alt="">
+        <img class="line7" src="images/mto-ti-line07.png" alt="">
+        <img class="line8" src="images/mto-ti-line08.png" alt="">
+        <img class="line9" src="images/mto-ti-line09.png" alt="">
+        <img class="line10" src="images/mto-ti-line10.png" alt="">
+        <img class="line11" src="images/mto-ti-line11.png" alt="">
+        <img class="line13" src="images/mto-ti-line13.png" alt="">
+        <img class="line16" src="images/mto-ti-line16.png" alt="">
+        <img class="line17" src="images/mto-ti-line17.png" alt="">
+    </div>
+    <div class="game-time" id="js-game-time">
+            60
+    </div>
+
+</div>
+<script src="javascripts/app.js"></script>
+</body>
+</html>

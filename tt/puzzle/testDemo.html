@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #wrapper {}
+
+        #wrapper .box-left,
+        #wrapper .box-center,
+        #wrapper .box-right {
+            height: 600px;
+            box-sizing: border-box;
+            float: left;
+            border: 1px solid red;
+        }
+
+        #wrapper .box-left .item,
+        #wrapper .box-center .item,
+        #wrapper .box-right .item {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            display: block;
+            position: absolute;
+        }
+
+        #wrapper .box-left,
+        #wrapper .box-right {
+            width: 200px
+        }
+
+        #wrapper .box-center {
+            width: calc(100% - 400px);
+            position: relative;
+        }
+
+        .box-left .item {
+            border: 1px solid black;
+            z-index: 1;
+        }
+        .box-left .item:nth-child(1){
+            top: 10px;
+            left: 20px;
+        }
+        .box-left .item:nth-child(2){
+            top: 130px;
+            left: 20px;
+        }
+        .box-left .item:nth-child(3){
+            top: 250px;
+            left: 20px;
+        }
+        .box-left .item:nth-child(4){
+            top: 370px;
+            left: 20px;
+        }
+        .box-left .item:nth-child(5){
+            top: 490px;
+            left: 20px;
+        }
+
+        .box-center .item {
+            border: 1px dashed gray;
+            position: relative;
+        }
+        .box-center .item:nth-child(1){
+            top: 20px;
+            left: 190px;
+        }
+        .box-center .item:nth-child(2){
+            top: 180px;
+            left: 20px;
+        }
+        .box-center .item:nth-child(3){
+            top: 180px;
+            left: 400px;
+        }
+        .box-center .item:nth-child(4){
+            top: 360px;
+            left: 90px;
+        }
+        .box-center .item:nth-child(5){
+            top: 480px;
+            left: 250px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="box-left">
+            <span class="item" data-drag="true" data-port="1">1</span>
+            <span class="item" data-drag="true" data-port="2">2</span>
+            <span class="item" data-drag="true" data-port="3">3</span>
+            <span class="item" data-drag="true" data-port="4">4</span>
+            <span class="item" data-drag="true" data-port="5">5</span>
+        </div>
+        <div class="box-center" id="js-box-center">
+            <span class="item" data-status="false" data-port="1">1</span>
+            <span class="item" data-status="false" data-port="2">2</span>
+            <span class="item" data-status="false" data-port="3">3</span>
+            <span class="item" data-status="false" data-port="4">4</span>
+            <span class="item" data-status="false" data-port="5">5</span>
+        </div>
+        <div class="box-right">
+
+        </div>
+    </div>
+    <script>
+
+        (function(win, doc){
+
+            //鼠标按下
+            win.addEventListener("mousedown", function(ev){
+                // debugger
+                let initData = {
+                    isDragObj: false,//是否是可以拖动对象
+                    dragObj: null,
+                    isPort: false,
+                    offestX: null,
+                    offestY: null,
+                    innerX: null,
+                    innerY: null,
+                    overDragObj: null,
+                    overDragX: null,
+                    overDragY: null,
+                    overStatusNum: 0
+                }
+
+                //有drag标记的才允许拖动
+                if(ev.target.getAttribute("data-drag") === "true"){
+                    isDragObj = true;
+                    initData.dragObj = ev.target;
+                    initData.offestX = parseInt(initData.dragObj.offsetLeft);
+                    initData.offestY = parseInt(initData.dragObj.offsetTop);
+                    initData.innerX = ev.clientX - initData.offestX; //鼠标在选择物体中的位置
+                    initData.innerY = ev.clientY - initData.offestY;
+                } else{
+                    return;
+                }
+
+                //加些样式
+                initData.dragObj.style.cursor = "pointer";
+                initData.dragObj.style.borderStyle = "solid";
+                initData.dragObj.style.borderColor = "red";
+                initData.dragObj.style.borderWidth = "2px";
+                initData.dragObj.style.zIndex = "2";
+
+                //移动时候
+                doc.onmousemove = function(ev){
+                    initData.dragObj.style.left = ev.clientX - initData.innerX + "px";
+                    initData.dragObj.style.top = ev.clientY - initData.innerY + "px";
+                    let boxPadX = initData.dragObj.offsetWidth - initData.innerX;
+                    let boxPadY = initData.dragObj.offsetHeight - initData.innerY;
+
+                    //超出边界
+                    if(parseInt(initData.dragObj.style.left) <= 0){
+                        initData.dragObj.style.left = "0px";
+                    }
+                    if(parseInt(initData.dragObj.style.top) <= 0){
+                        initData.dragObj.style.top = "0px";
+                    }
+                    if(parseInt(initData.dragObj.style.left) + initData.dragObj.offsetWidth >= window.innerWidth){
+                        initData.dragObj.style.left = window.innerWidth - initData.dragObj.offsetWidth+ "px";
+                    }
+                    if(parseInt(initData.dragObj.style.top) + initData.dragObj.offsetHeight >= window.innerHeight){
+                        initData.dragObj.style.top = window.innerHeight - initData.dragObj.offsetHeight + "px";
+                    }
+
+
+                    doc.getElementById("js-box-center").childNodes.forEach((ele, index) => {
+                        if(ele.tagName === "SPAN" && ele.getAttribute("data-port") === initData.dragObj.getAttribute("data-port")){
+                            initData.overDragObj = ele;
+                            initData.overDragX = ele.offsetLeft;
+                            initData.overDragY = ele.offsetTop;
+                        }
+                    });
+                    // debugger
+                    console.log(initData.overDragX -20 + 150 + boxPadX, initData.overDragY);
+                    if(
+                        initData.dragObj.offsetLeft > initData.overDragX - 30 + 150 + boxPadX &&
+                        initData.dragObj.offsetLeft < initData.overDragX + 30 + 150 + boxPadX &&
+                        initData.dragObj.offsetTop > initData.overDragY - 30 &&
+                        initData.dragObj.offsetTop < initData.overDragY + 30
+                    ){
+                        initData.isPort = true;
+                        initData.overDragObj.setAttribute("data-status", "true");
+                    } else{
+                        initData.isPort = false;
+                        initData.overDragObj.setAttribute("data-status", "false");
+                    }
+                }
+
+                //放下时候
+                doc.onmouseup = function(ev){
+                    var statusNum = doc.getElementById("js-box-center").children;
+                    for (let i = 0; i <statusNum.length ; i++) {
+                        if(doc.getElementById("js-box-center").children[i].getAttribute("data-status") === "true"){
+                            initData.overStatusNum += 1;
+                        }
+                    }
+                    if(initData.overStatusNum === statusNum.length){
+                        alert("game over");
+                    }
+
+
+                    //样式还原
+                    initData.dragObj.style.cursor = "auto";
+                    initData.dragObj.style.borderStyle = "";
+                    initData.dragObj.style.borderColor = "";
+                    initData.dragObj.style.borderWidth = "";
+                    initData.dragObj.style.zIndex = "1";
+
+                    if(!initData.isPort){
+                        initData.dragObj.style.left= "";
+                        initData.dragObj.style.top= "";
+                        initData.isPort = false;
+                    }
+
+                    initData.isDragObj = false;
+                    initData.dragObj = null;
+                    initData.offestX = null;
+                    initData.offestY = null;
+                    initData.innerX = null;
+                    initData.innerY = null;
+                    initData.overDragObj = null;
+                    initData.overDragX = null;
+                    initData.overDragY = null;
+
+                    // 回收内存
+                    doc.onmousemove = null;
+                    doc.onmouseup = null;
+
+                    // debugger
+                }
+
+            }, true)
+        }(window, document))
+
+    </script>
+</body>
+
+</html>

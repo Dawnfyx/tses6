@@ -1,0 +1,267 @@
+@import "base";
+
+
+#wrapper{
+  width: 1920px;
+  height: 1092px;
+}
+
+#wrapper{
+  width: 1920px;
+  height: 1092px;
+  background: url("../images/drag-big-bg.jpg") center center no-repeat;
+
+  .section-top{
+    width: 100%;
+    height: 160px;
+    background: url("../images/drag-title.png") top center no-repeat;
+    margin-bottom: 20px;
+
+    .title{
+      width: 1920px;
+      height: 70px;
+      text-align: center;
+      padding-top: 40px;
+      box-sizing: border-box;
+    }
+    .navbar{
+      width: 1000px;
+      height: 20px;
+      margin: 40px auto 0px;
+
+      ul{
+        list-style-type: none;
+
+        li{
+          width: 75px;
+          height: 20px;
+          margin: 0px 17px;
+          float: left;
+
+          img{
+            width: 75px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.section-bottom{
+  width: 1801px;
+  height: 867px;
+  background: url("../images/drag-center.jpg") center center no-repeat;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 33px;
+
+  .box-left{
+    width: 156px;
+    float: left;
+    z-index: 2;
+  }
+  .box-center{
+    //width: calc(100% - 312px);
+    width: calc(100% - 487px);
+    height: 100%;
+    float: left;
+    //z-index: 1;
+  }
+  .box-right{
+    width: 156px;
+    float: right;
+    //position: relative;
+    z-index: 2;
+
+    .show-cell:nth-child(1){
+      margin-right: 175px;
+      float: right;
+      //position: absolute;
+      //right: 270px;
+    }
+  }
+  .show-cell{
+    width: 156px;
+    height: 94px;
+    margin-bottom: 20px;
+
+    .drag-before{
+
+    }
+
+    .drag-after{
+      position: absolute;
+      font-size: 0px;
+      display: none;
+    }
+
+    .drag-box-obj01{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-01.png") center center no-repeat;
+    }
+    .drag-obj01{
+      width: 921px;
+      height: 72px;
+      background: url("../images/drag2-obj-01.png") center center no-repeat;
+    }
+    .drag-box-obj02{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-02.png") center center no-repeat;
+    }
+    .drag-obj02{
+      width: 346px;
+      height: 305px;
+      background: url("../images/drag2-obj-02.png") center center no-repeat;
+    }
+    .drag-box-obj03{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-03.png") center center no-repeat;
+    }
+    .drag-obj03{
+      width: 836px;
+      height: 32px;
+      background: url("../images/drag2-obj-03.png") center center no-repeat;
+    }
+    .drag-box-obj04{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-04.png") center center no-repeat;
+    }
+    .drag-obj04{
+      width: 138px;
+      height: 133px;
+      background: url("../images/drag2-obj-04.png") center center no-repeat;
+    }
+    .drag-box-obj05{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-05.png") center center no-repeat;
+    }
+    .drag-obj05{
+      width: 97px;
+      height: 127px;
+      background: url("../images/drag2-obj-05.png") center center no-repeat;
+    }
+    .drag-box-obj06{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-06.png") center center no-repeat;
+    }
+    .drag-obj06{
+      width: 402px;
+      height: 31px;
+      background: url("../images/drag2-obj-06.png") center center no-repeat;
+    }
+    .drag-box-obj07{
+      width: 100%;
+      height: 100%;
+      background: url("../images/drag2-box-07.png") center center no-repeat;
+    }
+    .drag-obj07{
+      width: 24px;
+      height: 24px;
+      background: url("../images/drag2-obj-07.png") center center no-repeat;
+    }
+  }
+}
+
+#js-box-center{
+  position: relative;
+
+  .drag-help{
+    font-size: 0px;
+    position: absolute;
+    opacity: 0;
+  }
+  .drag-obj01{
+    width: 921px;
+    height: 72px;
+    background: url("../images/drag2-obj-011.png") center center no-repeat;
+    top: 180px;
+    left: 269px;
+  }
+  .drag-obj02{
+    width: 346px;
+    height: 305px;
+    background: url("../images/drag2-obj-021.png") center center no-repeat;
+    top: 265px;
+    left: 525px;
+  }
+  .drag-obj03{
+    width: 836px;
+    height: 32px;
+    background: url("../images/drag2-obj-031.png") center center no-repeat;
+    top: 250px;
+    left: 314px;
+  }
+  .drag-obj04{
+    width: 138px;
+    height: 133px;
+    background: url("../images/drag2-obj-041.png") center center no-repeat;
+    top: 444px;
+    left: 628px;
+  }
+  .drag-obj05{
+    width: 97px;
+    height: 127px;
+    background: url("../images/drag2-obj-051.png") center center no-repeat;
+    top: 570px;
+    left: 645px;
+  }
+  .drag-obj06{
+    width: 402px;
+    height: 31px;
+    background: url("../images/drag2-obj-061.png") center center no-repeat;
+    top: 468px;
+    left: 498px;
+  }
+  .drag-obj07{
+    width: 24px;
+    height: 24px;
+    background: url("../images/drag2-obj-071.png") center center no-repeat;
+    top: 282px;
+    left: 1110px;
+  }
+}
+
+.layui-layer{
+  width: 540px !important;
+  height: 240px;
+  background: url("../images/layer-alert.png") center center no-repeat;
+  background-color: transparent !important;
+  box-shadow: none;
+
+  .layui-layer-title,
+  .layui-layer-setwin {
+    display: none;
+  }
+  .layui-layer-content{
+    height: 120px;
+    line-height: 90px !important;
+    padding: 44px 40px 0px !important;
+    text-align: center;
+    margin-top: 35px;
+    box-sizing: border-box;
+    overflow-y: hidden !important;
+    color: #b5ccff;
+    font-size: 18px !important;
+  }
+  .layui-layer-btn{
+    height: 45px;
+    padding: 0 40px 40px;
+
+    a{
+      background-color: transparent;
+      border-color: transparent;
+      color: #b5ccff;
+    }
+    .layui-layer-btn0{
+      float: left;
+    }
+  }
+}
+
+

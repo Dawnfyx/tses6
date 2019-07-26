@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="../../../../lib/core/ht.js"></script>
+        <script src="../../../../lib/plugin/ht-obj.js"></script>
+        <script src="../../../../lib/plugin/ht-form.js"></script>
+        <script>
+        ht.Default.setImage('meter', './obj/meter.jpg');
+        function init(){
+            rawS3 = null;
+            dataModel = new ht.DataModel();
+            g3d = new ht.graph3d.Graph3dView(dataModel);
+            g3d.addToDOM();
+
+            g3d.setGridVisible(true);
+            g3d.getLabel = function(data){return null;};
+
+            load('obj/meter2.mtl', 'obj/meter2.obj');
+        }
+
+        function parse(scooter_mtl, scooter_obj){
+            var modelMap = ht.Default.parseObj(scooter_obj, scooter_mtl, {center: true, cube: true});
+            var lastNode = null;
+            var firstNode = null;
+            var parentNode = new ht.Data();
+            var array = [];
+
+            parentNode.setName('Separate Scooter');
+            dataModel.add(parentNode);
+
+            for(var name in modelMap){
+                var model = modelMap[name];
+                console.info(model);
+                var shape3d = 'scooter:' + name;
+
+                ht.Default.setShape3dModel(shape3d, model);
+                array.push(model);
+
+                var node = new ht.Node();
+                node.setName(name);
+                node.setParent(parentNode);
+                node.s({
+                    'shape3d': shape3d,
+                    'wf.visible': 'selected'
+                });
+                if (name === 'LED') {
+                    node.s('shape3d.top.visible', 'false');
+                    node.s('shape3d.left.visible', 'false');
+                    node.s('shape3d.back.visible', 'false');
+                }
+                node.setHost(lastNode);
+                lastNode = node;
+                if(!firstNode){
+                    firstNode = node;
+                }
+                if(!rawS3){
+                    rawS3 = model.rawS3;
+                }
+                node.s3(rawS3);
+                dataModel.add(node);
+            }
+            if(lastNode){
+                firstNode.setHost(lastNode);
+            }
+            node.p3(300, 0, 0);
+            node.s({
+                'note': 'A lot of Nodes host together',
+                'note.color': 'black',
+                'note.background': 'yellow',
+                'note.face': 'center',
+                'note.position': 7
+            });
+
+            ht.Default.setShape3dModel('scooter', array);
+            var node = new ht.Node();
+            node.setName('All in ONE');
+            node.s({
+                'shape3d': 'scooter',
+                'wf.visible': 'selected',
+                'note': 'One Node',
+                'note.color': 'black',
+                'note.background': 'yellow',
+                'note.face': 'center',
+                'note.position': 7,
+                'note.autorotate': 'y'
+            });
+            node.s3(rawS3);
+            node.p3(-300, 0, 0);
+            dataModel.add(node);
+        }
+
+        function load(mtlUrl, objUrl){
+            var xhr1 = new XMLHttpRequest();
+            xhr1.onload = function(e){
+                var mtlText = e.target.responseText;
+                var xhr2 = new XMLHttpRequest();
+                xhr2.onload = function(e){
+                    var objText = e.target.responseText;
+                    parse(mtlText, objText);
+                };
+                xhr2.open('GET', objUrl, true);
+                xhr2.send(null);
+            };
+            xhr1.open('GET', mtlUrl, true);
+            xhr1.send(null);
+        }
+        </script>
+    </head>
+    <body onload="init();">
+
+    </body>
+</html>

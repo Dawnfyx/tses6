@@ -1,0 +1,434 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+ol,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+ol li,
+ul li {
+  list-style-type: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+#wrapper {
+  width: 1920px;
+  height: 1092px;
+}
+#wrapper {
+  width: 1920px;
+  height: 1092px;
+  background: url("../images/drag-big-bg.jpg") center center no-repeat;
+}
+#wrapper .section-top {
+  width: 100%;
+  height: 160px;
+  background: url("../images/drag-title.png") top center no-repeat;
+  margin-bottom: 20px;
+}
+#wrapper .section-top .title {
+  width: 1920px;
+  height: 70px;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+#wrapper .section-top .navbar {
+  width: 1000px;
+  height: 20px;
+  margin: 40px auto 0px;
+}
+#wrapper .section-top .navbar ul {
+  list-style-type: none;
+}
+#wrapper .section-top .navbar ul li {
+  width: 75px;
+  height: 20px;
+  margin: 0px 17px;
+  float: left;
+}
+#wrapper .section-top .navbar ul li img {
+  width: 75px;
+  height: 20px;
+}
+.section-bottom {
+  width: 1801px;
+  height: 867px;
+  background: url("../images/drag-center.jpg") center center no-repeat;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 33px;
+}
+.section-bottom .box-left {
+  width: 156px;
+  float: left;
+  z-index: 2;
+}
+.section-bottom .box-center {
+  width: calc(100% - 487px);
+  height: 100%;
+  float: left;
+}
+.section-bottom .box-right {
+  width: 156px;
+  float: right;
+  z-index: 2;
+}
+.section-bottom .show-cell {
+  width: 156px;
+  height: 94px;
+  margin-bottom: 20px;
+}
+.section-bottom .show-cell .drag-after {
+  position: absolute;
+  font-size: 0px;
+  display: none;
+}
+.section-bottom .show-cell .drag-box-obj01 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-01.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj01 {
+  width: 1001px;
+  height: 78px;
+  background: url("../images/drag-obj-01.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj02 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-02.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj02 {
+  width: 10px;
+  height: 110px;
+  background: url("../images/drag-obj-02.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj03 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-03.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj03 {
+  width: 1022px;
+  height: 68px;
+  background: url("../images/drag-obj-03.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj04 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-04.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj04 {
+  width: 753px;
+  height: 125px;
+  background: url("../images/drag-obj-04.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj05 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-05.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj05 {
+  width: 92px;
+  height: 24px;
+  background: url("../images/drag-obj-05.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj06 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-06.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj06 {
+  width: 116px;
+  height: 34px;
+  background: url("../images/drag-obj-06.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj07 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-07.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj07 {
+  width: 228px;
+  height: 172px;
+  background: url("../images/drag-obj-07.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj08 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-08.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj08 {
+  width: 37px;
+  height: 38px;
+  background: url("../images/drag-obj-08.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj09 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-09.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj09 {
+  width: 51px;
+  height: 43px;
+  background: url("../images/drag-obj-09.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj10 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-10.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj10 {
+  width: 194px;
+  height: 12px;
+  background: url("../images/drag-obj-10.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj11 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-11.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj11 {
+  width: 8px;
+  height: 10px;
+  background: url("../images/drag-obj-11.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj12 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-12.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj12 {
+  width: 27px;
+  height: 533px;
+  background: url("../images/drag-obj-12.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj13 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-13.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj13 {
+  width: 10px;
+  height: 510px;
+  background: url("../images/drag-obj-13.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj14 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-14.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj14 {
+  width: 532px;
+  height: 260px;
+  background: url("../images/drag-obj-14.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-box-obj15 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/drag-box-15.png") center center no-repeat;
+}
+.section-bottom .show-cell .drag-obj15 {
+  width: 53px;
+  height: 100px;
+  background: url("../images/drag-obj-15.png") center center no-repeat;
+}
+#js-box-center {
+  position: relative;
+}
+#js-box-center .drag-help {
+  font-size: 0px;
+  position: absolute;
+  opacity: 0;
+}
+#js-box-center .drag-obj01 {
+  width: 1001px;
+  height: 78px;
+  background: url("../images/drag-obj-011.png") center center no-repeat;
+  top: 100px;
+  left: 265px;
+}
+#js-box-center .drag-obj02 {
+  width: 10px;
+  height: 110px;
+  background: url("../images/drag-obj-021.png") center center no-repeat;
+  top: 168px;
+  left: 330px;
+}
+#js-box-center .drag-obj03 {
+  width: 1022px;
+  height: 68px;
+  background: url("../images/drag-obj-031.png") center center no-repeat;
+  top: 215px;
+  left: 270px;
+}
+#js-box-center .drag-obj04 {
+  width: 753px;
+  height: 125px;
+  background: url("../images/drag-obj-041.png") center center no-repeat;
+  top: 112px;
+  left: 492px;
+}
+#js-box-center .drag-obj05 {
+  width: 92px;
+  height: 24px;
+  background: url("../images/drag-obj-051.png") center center no-repeat;
+  top: 185px;
+  left: 826px;
+}
+#js-box-center .drag-obj06 {
+  width: 116px;
+  height: 34px;
+  background: url("../images/drag-obj-061.png") center center no-repeat;
+  top: 204px;
+  left: 861px;
+}
+#js-box-center .drag-obj07 {
+  width: 228px;
+  height: 172px;
+  background: url("../images/drag-obj-071.png") center center no-repeat;
+  top: 95px;
+  left: 737px;
+}
+#js-box-center .drag-obj08 {
+  width: 37px;
+  height: 38px;
+  background: url("../images/drag-obj-081.png") center center no-repeat;
+  top: 228px;
+  left: 737px;
+}
+#js-box-center .drag-obj09 {
+  width: 51px;
+  height: 43px;
+  background: url("../images/drag-obj-091.png") center center no-repeat;
+  top: 200px;
+  left: 758px;
+}
+#js-box-center .drag-obj10 {
+  width: 194px;
+  height: 12px;
+  background: url("../images/drag-obj-101.png") center center no-repeat;
+  top: 102px;
+  left: 749px;
+}
+#js-box-center .drag-obj11 {
+  width: 8px;
+  height: 10px;
+  background: url("../images/drag-obj-111.png") center center no-repeat;
+  top: 103px;
+  left: 741px;
+}
+#js-box-center .drag-obj12 {
+  width: 27px;
+  height: 533px;
+  background: url("../images/drag-obj-121.png") center center no-repeat;
+  top: 83px;
+  left: 717px;
+}
+#js-box-center .drag-obj13 {
+  width: 10px;
+  height: 510px;
+  background: url("../images/drag-obj-131.png") center center no-repeat;
+  top: 100px;
+  left: 730px;
+}
+#js-box-center .drag-obj14 {
+  width: 532px;
+  height: 260px;
+  background: url("../images/drag-obj-141.png") center center no-repeat;
+  top: 470px;
+  left: 575px;
+}
+#js-box-center .drag-obj15 {
+  width: 53px;
+  height: 100px;
+  background: url("../images/drag-obj-151.png") center center no-repeat;
+  top: 105px;
+  left: 902px;
+}
+.layui-layer {
+  width: 540px !important;
+  height: 240px;
+  background: url("../images/layer-alert.png") center center no-repeat;
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.layui-layer .layui-layer-title,
+.layui-layer .layui-layer-setwin {
+  display: none;
+}
+.layui-layer .layui-layer-content {
+  height: 120px;
+  line-height: 90px !important;
+  padding: 44px 40px 0px !important;
+  text-align: center;
+  margin-top: 35px;
+  box-sizing: border-box;
+  overflow-y: hidden !important;
+  color: #b5ccff;
+  font-size: 18px !important;
+}
+.layui-layer .layui-layer-btn {
+  height: 45px;
+  padding: 0 40px 40px;
+}
+.layui-layer .layui-layer-btn a {
+  background-color: transparent;
+  border-color: transparent;
+  color: #b5ccff;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn0 {
+  float: left;
+}
+/*# sourceMappingURL=style.css.map */

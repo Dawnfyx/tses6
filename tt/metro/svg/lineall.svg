@@ -1,0 +1,45 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1393 1070">
+    <defs>
+        <style>
+            .cls-1,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17,.cls-18,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{fill:none;stroke-miterlimit:10;}.cls-1{stroke:#bfbf00;}.cls-2{stroke:#13589d;}.cls-3{stroke:#8d8d8d;}.cls-4{stroke:#631212;}.cls-5{stroke:#540f0f;}.cls-6{stroke:#bf6913;}.cls-7{stroke:#b51919;}.cls-8{stroke:#be3974;}.cls-9{stroke:#9a83a3;}.cls-10{stroke:#946361;}.cls-11{stroke:#bf2146;}.cls-12{stroke:#1b6452;}.cls-13{stroke:#77a1a6;}.cls-14{stroke:#af7895;}.cls-15{stroke:#21b721;}.cls-16{stroke:#8b8b8b;}.cls-17{stroke:#639a99;}.cls-18{stroke:#8b00bf;}
+        </style>5v103l
+    </defs>
+    <title>上海地铁路线</title>
+    <path class="cls-1" d="M831,598l46.5-46.5v-27l-31-34v-157c0-26,26-22,26-22h153l64-63V5.5"
+          transform="translate(-226.5 -5.5)"/>
+    <path class="cls-2" d="M1220.5,51.5v103l-88,86s-9,8-25,8h-66s-17-2-16,21v115l16,16s6,6,5,22v209h-25L944,709V838.5"
+          transform="translate(-226.5 -5.5)"/>
+    <path class="cls-3" d="M944,834v12.5s-1.5,36,37.5,31c0,0,51-8,45,29v106" transform="translate(-226.5 -5.5)"/>
+    <polyline class="cls-4"
+              points="557 80 557 254 677 378 646 426 676 459 676 703 719 703 768 726 1039 726 1039 748 1091 748"/>
+    <polyline class="cls-5" points="368 108 512 108 557 146.67"/>
+    <path class="cls-6" d="M872.5,67.5v244l70,73v184s-2,32,35,29h199l103-103" transform="translate(-226.5 -5.5)"/>
+    <path class="cls-7" d="M977.5,54.5v282l48,48v25s2,19-24,18h-63l-108,106v65l-75,76"
+          transform="translate(-226.5 -5.5)"/>
+    <path class="cls-8" d="M755.5,674.5v302s-3,30,31,29h29s33-2,27,39v31" transform="translate(-226.5 -5.5)"/>
+    <path class="cls-8" d="M754.5,829.5l-55,53s-10,10-28,11h-63" transform="translate(-226.5 -5.5)"/>
+    <path class="cls-9" d="M1159.5,98.5v147l-85,85v100s-1,12-12,9h-87l-11-8h-348" transform="translate(-226.5 -5.5)"/>
+    <polyline class="cls-9" points="400 382 445 382 482.13 426"/>
+    <polyline class="cls-10" points="399 382 345 357 70 357 36 424 0 424"/>
+
+
+    <path class="cls-11" d="M1330.5,65.5v169s0,20-13,28l-188,186s-3,2-3,14v118l-60,61v49s2,18-19,19h-102"
+          transform="translate(-226.5 -5.5)"/>
+
+    <polyline class="cls-12"
+              points="1223 290 1223 248 989 248 906 340 799 340 751 331 740 342 742 444 765 525 765 565 716.01 565 604 528 395 528"/>
+
+    <polyline class="cls-13"
+              points="1393 289 1106 289 960 436 938 436 924.62 421.61 890 421.61 849 459 406 459 282 581 282 651"/>
+    <polyline class="cls-14"
+              points="474 320 540 320 569 345 624 345 649.31 349.39 651 338 667.85 328.79 751 331 751 364 740.72 378.82 751 411 805 459 805 576 785 576 785 609 820 609 858.19 617.5 1115 617.5"/>
+    <path class="cls-15" d="M1386.5,658.5v-124s1-15-18-14h-168s-17-1-18-25v-33l-76-78h-518"
+          transform="translate(-226.5 -5.5)"/>
+
+    <line class="cls-16" x1="1159" y1="653" x2="1026.5" y2="515.5"/>
+
+    <polyline class="cls-17" points="1026 517 1020 876 1112 876 1112 925 1257 925"/>
+    <path class="cls-18"
+          d="M980.5,525.5h125l39-38s7-4,7-14v-158s1-18-27-17h-46l-17,16h-189s-23-4-22,23v128l54,54s10,7,20,6h56Z"
+          transform="translate(-226.5 -5.5)"/>
+</svg>

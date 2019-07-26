@@ -1,0 +1,113 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.big-bg{
+    background: url("../images/mto-big-bg2.jpg") top center no-repeat;
+}
+
+.small-bg{
+    background: url("../images/mto-small-bg.jpg") top center no-repeat;
+}
+.main{
+    background: url("../images/trainMapBg.png") 175px 32px no-repeat;
+}
+
+
+#wrapper{
+    text-align: center;
+}
+
+.header{
+    height: 185px;
+    background: url("../images/mto-title-bg.png") top center no-repeat;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.header2{
+    height: 85px;
+    background: url("../images/mto-title-bg2.png") top center no-repeat;
+}
+.header .title{
+    width: 260px;
+    height: 32px;
+    margin: 0px auto;
+}
+.header .navbar{
+    width: 1000px;
+    height: 20px;
+    margin: 40px auto 0px;
+}
+.header .navbar ul{
+    list-style-type: none;
+}
+.header .navbar li{
+    width: 75px;
+    height: 20px;
+    margin: 0px 9px;
+    float: left;
+}
+.header .navbar li img{
+    width: 75px;
+    height: 20px;
+}
+
+#borderPane1{
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+#new-section{
+    width: 1801px;
+    height: 575px;
+    margin: 0px auto;
+}
+.new-title{
+    width: 100%;
+    height: 65px;
+    text-align: left;
+}
+.new-title img{
+    margin-top: 25px;
+}
+.news-left{
+    width: 880px;
+    height: 480px;
+    background: url("../images/mto-small-bg12.png") center center no-repeat;
+    float: left;
+}
+.news-right{
+    width: 880px;
+    height: 480px;
+    background: url("../images/mto-small-bg2.png") center center no-repeat;
+    float: right;
+}
+.news-right ul{
+    list-style-type: none;
+    padding: 30px 0px 0px 20px;
+}
+.news-right ul li{
+    text-align: left;
+    margin-bottom: 35px;
+}
+.news-right ul li:before{
+    content:url("../images/mto-list-icon.png");
+}
+.news-right ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #00ecfc;
+    margin-left: 5px;
+}
+.news-right .more{
+    float: right;
+    margin-right: 20px;
+}
+.news-right .more button{
+    width: 188px;
+    height: 42px;
+    background: url("../images/btn-more.png") center center no-repeat;
+    border: none 0;
+    cursor: pointer;
+}
