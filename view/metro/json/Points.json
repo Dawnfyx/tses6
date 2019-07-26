@@ -1,0 +1,36 @@
+{
+  "width": 21,
+  "height": 21,
+  "comps": [
+    {
+      "type": "oval",
+      "background": "rgb(255, 246, 96)",
+      "borderWidth": 1,
+      "borderColor": {
+        "func": "attr@npColor",
+        "value": "rgb(150,150,150)"
+      },
+      "rect": [
+        0.59335,
+        0.59335,
+        19.81331,
+        19.81331
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(255, 246, 96)",
+      "borderWidth": 1,
+      "borderColor": {
+        "func": "attr@npColor",
+        "value": "#979797"
+      },
+      "rect": [
+        6.03737,
+        6.03737,
+        8.92525,
+        8.92525
+      ]
+    }
+  ]
+}

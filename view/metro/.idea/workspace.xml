@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="171bb3c2-a9f9-47ed-9636-d27dd240c574" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2089110500">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="12" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.opened" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="51" />
+          <entry key="js" value="39" />
+          <entry key="json" value="5" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="51" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="39" />
+          <entry key="TypeScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="175" />
+          <entry key="html" value="3087" />
+          <entry key="js" value="4381" />
+          <entry key="json" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="175" />
+          <entry key="HTML" value="3087" />
+          <entry key="JSON" value="8" />
+          <entry key="JavaScript" value="4381" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1399131994">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="43" />
+          <entry key="html" value="25" />
+          <entry key="js" value="856" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="43" />
+          <entry key="HTML" value="25" />
+          <entry key="JavaScript" value="856" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="3" />
+          <entry key="js" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="3" />
+          <entry key="JavaScript" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-586775667">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="25" />
+          <entry key="project.open.time.0" value="15" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="3" />
+          <entry key="html" value="31" />
+          <entry key="js" value="7" />
+          <entry key="svg" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="31" />
+          <entry key="JavaScript" value="7" />
+          <entry key="SVG" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="375" />
+          <entry key="html" value="7914" />
+          <entry key="js" value="1807" />
+          <entry key="svg" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="375" />
+          <entry key="HTML" value="7914" />
+          <entry key="JavaScript" value="1807" />
+          <entry key="SVG" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-399889087">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="bak" value="2" />
+          <entry key="html" value="264" />
+          <entry key="js" value="2618" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="264" />
+          <entry key="JavaScript" value="2618" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bak" value="2" />
+          <entry key="css" value="1" />
+          <entry key="html" value="9" />
+          <entry key="js" value="9" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="9" />
+          <entry key="JavaScript" value="9" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="TypeScript" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1185943127">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="3" />
+          <entry key="js" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="3" />
+          <entry key="JavaScript" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="8" />
+          <entry key="js" value="2971" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="8" />
+          <entry key="JavaScript" value="2971" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-382327300">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ptpop.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ptpop-iframe.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="427" column="97" lean-forward="true" selection-start-line="427" selection-start-column="97" selection-end-line="427" selection-end-column="97" />
+              <folding>
+                <element signature="n#defs#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="613">
+              <caret line="362" column="25" lean-forward="true" selection-start-line="362" selection-start-column="25" selection-end-line="362" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>imgNum</find>
+      <find>opacity</find>
+      <find>mouse</find>
+      <find>'svg'</find>
+      <find>line-explain</find>
+      <find>opac</find>
+      <find>dataClassify</find>
+      <find>howHideExplainBox</find>
+      <find>showHideExplainBox</find>
+      <find>ErrConl</find>
+      <find>line1</find>
+      <find>line&quot; +</find>
+      <find>cacheLineObj</find>
+      <find>equalSvgLnie</find>
+      <find>.layui-layer .layui-layer-content</find>
+      <find>cacheLineType</find>
+      <find>nowLineTypeData</find>
+      <find>hide</find>
+      <find>svgLineShowHide</find>
+      <find>line10</find>
+      <find>forExplainBox</find>
+      <find>debugger</find>
+      <find>isShowHideExplainBox</find>
+      <find>over</find>
+      <find>lineDataAarry</find>
+      <find>line6</find>
+      <find>layerAlert</find>
+      <find>游戏</find>
+      <find>timeTime</find>
+      <find>layer</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>json</replace>
+      <replace>strokeWidth='8pt'</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/asfg.html" />
+        <option value="$PROJECT_DIR$/testA.html" />
+        <option value="$PROJECT_DIR$/testPanel.js" />
+        <option value="$PROJECT_DIR$/testPanel.html" />
+        <option value="$PROJECT_DIR$/testLine.html" />
+        <option value="$PROJECT_DIR$/displays/testPanel.js" />
+        <option value="$PROJECT_DIR$/json/红灯.json" />
+        <option value="$PROJECT_DIR$/json/小站点.json" />
+        <option value="$PROJECT_DIR$/test1.html" />
+        <option value="$PROJECT_DIR$/test2.html" />
+        <option value="$PROJECT_DIR$/../../03Month/originPaint/html/js/app.js" />
+        <option value="$PROJECT_DIR$/htForWeb/guide/plugin/animation/examples/example_demo1.html" />
+        <option value="$PROJECT_DIR$/test3.html" />
+        <option value="$PROJECT_DIR$/newHtml.html" />
+        <option value="$PROJECT_DIR$/javascripts/index2.js" />
+        <option value="$PROJECT_DIR$/javascripts/points2.js" />
+        <option value="$PROJECT_DIR$/test4.html" />
+        <option value="$PROJECT_DIR$/htForWeb/guide/core/shape/examples/example_polyline.html" />
+        <option value="$PROJECT_DIR$/javascripts/points.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index-iframe.html" />
+        <option value="$PROJECT_DIR$/../5ce6520d33158/testcheck.html" />
+        <option value="$PROJECT_DIR$/svg/lineall.svg" />
+        <option value="$PROJECT_DIR$/popToPop2.html" />
+        <option value="$PROJECT_DIR$/popToPop.html" />
+        <option value="$PROJECT_DIR$/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/../190606/demo.html" />
+        <option value="$PROJECT_DIR$/layer/layer.js" />
+        <option value="$PROJECT_DIR$/javascripts/index.js" />
+        <option value="$PROJECT_DIR$/javascripts/app.js.bak" />
+        <option value="$PROJECT_DIR$/ptpop.html" />
+        <option value="$PROJECT_DIR$/../metrotest2/ptpop-iframe.html" />
+        <option value="$PROJECT_DIR$/javascripts/app2.js" />
+        <option value="$PROJECT_DIR$/ptpop-iframe.html" />
+        <option value="$PROJECT_DIR$/javascripts/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-35" />
+    <option name="y" value="100" />
+    <option name="width" value="1932" />
+    <option name="height" value="956" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="metro0701" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metro0701" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="metro0701" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metro0701" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\2019\06Month\metro0624\javascripts" />
+      <recent name="E:\work\2019\05Month\metrotest2" />
+      <recent name="E:\work\2019\05Month\metro\javascripts" />
+      <recent name="E:\work\2019\05Month\metro" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="171bb3c2-a9f9-47ed-9636-d27dd240c574" name="Default Changelist" comment="" />
+      <created>1557106438802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557106438802</updated>
+      <workItem from="1557106439927" duration="21634000" />
+      <workItem from="1557192785520" duration="23824000" />
+      <workItem from="1557278049842" duration="27936000" />
+      <workItem from="1557310622303" duration="10000" />
+      <workItem from="1557364731568" duration="25139000" />
+      <workItem from="1557450263010" duration="20851000" />
+      <workItem from="1557475299701" duration="10045000" />
+      <workItem from="1557710243667" duration="992000" />
+      <workItem from="1557720308855" duration="120000" />
+      <workItem from="1557726227649" duration="802000" />
+      <workItem from="1557727436124" duration="12474000" />
+      <workItem from="1557796423439" duration="4291000" />
+      <workItem from="1557813164482" duration="55000" />
+      <workItem from="1557813480835" duration="6311000" />
+      <workItem from="1557827719811" duration="368000" />
+      <workItem from="1557828487659" duration="75000" />
+      <workItem from="1557907784306" duration="1783000" />
+      <workItem from="1557970397918" duration="1574000" />
+      <workItem from="1557972341770" duration="11071000" />
+      <workItem from="1557986647576" duration="9659000" />
+      <workItem from="1558004575557" duration="599000" />
+      <workItem from="1558057421122" duration="1688000" />
+      <workItem from="1558314688747" duration="3884000" />
+      <workItem from="1558318724362" duration="1959000" />
+      <workItem from="1558320697700" duration="356000" />
+      <workItem from="1558322966403" duration="5551000" />
+      <workItem from="1558333470036" duration="843000" />
+      <workItem from="1558334343549" duration="16899000" />
+      <workItem from="1558401110518" duration="21036000" />
+      <workItem from="1558426935992" duration="7525000" />
+      <workItem from="1558487378734" duration="891000" />
+      <workItem from="1558515551649" duration="4090000" />
+      <workItem from="1558573788552" duration="9881000" />
+      <workItem from="1558669165045" duration="14886000" />
+      <workItem from="1558920168199" duration="25694000" />
+      <workItem from="1559006962147" duration="20494000" />
+      <workItem from="1559092664105" duration="8844000" />
+      <workItem from="1559102123977" duration="19553000" />
+      <workItem from="1559178751230" duration="15664000" />
+      <workItem from="1559265439788" duration="3138000" />
+      <workItem from="1559269177711" duration="23215000" />
+      <workItem from="1559524131781" duration="4437000" />
+      <workItem from="1559529978720" duration="222000" />
+      <workItem from="1559530385958" duration="41000" />
+      <workItem from="1559549370543" duration="1062000" />
+      <workItem from="1559712214621" duration="18182000" />
+      <workItem from="1559783773529" duration="14376000" />
+      <workItem from="1559802636174" duration="13472000" />
+      <workItem from="1560129511840" duration="8656000" />
+      <workItem from="1560141315771" duration="18746000" />
+      <workItem from="1560215794653" duration="44000" />
+      <workItem from="1560216650243" duration="4159000" />
+      <workItem from="1561614786601" duration="24546000" />
+      <workItem from="1561684728898" duration="10857000" />
+      <workItem from="1561698853797" duration="15234000" />
+      <workItem from="1561715363662" duration="1053000" />
+      <workItem from="1561947081377" duration="4321000" />
+      <workItem from="1561951448714" duration="22128000" />
+      <workItem from="1561976789174" duration="207000" />
+      <workItem from="1562029616939" duration="206000" />
+      <workItem from="1562029835484" duration="87000" />
+      <workItem from="1562118490843" duration="4297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="552037000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.097946286" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/json/Points.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/javascripts/index2.js" />
+    <entry file="file://$PROJECT_DIR$/htForWeb/guide/core/shape/ht-shape-guide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htForWeb/guide/core/shape/examples/example_polyline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/points.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/gen.svg" />
+    <entry file="file://$PROJECT_DIR$/svg/CSS.svg" />
+    <entry file="file://$PROJECT_DIR$/svg/gen2.svg" />
+    <entry file="file://$PROJECT_DIR$/svg/inline.svg" />
+    <entry file="file://$PROJECT_DIR$/svg/line04.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line16.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/maglev.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line02.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line13.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line09.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line12.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line06.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line17.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line10s.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line10.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line05s.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line05.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line01.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line07.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line11s.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line11.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/pujiang.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line08.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svg/line03.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../5ce6520d33158/testcheck.html" />
+    <entry file="file://$PROJECT_DIR$/svg/lineall.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popToPop2.html" />
+    <entry file="file://$PROJECT_DIR$/popToPop.html" />
+    <entry file="file://$PROJECT_DIR$/../190606/demo.html" />
+    <entry file="file://$USER_HOME$/Desktop/callback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="1" column="5364" selection-start-line="1" selection-start-column="5364" selection-end-line="1" selection-end-column="5364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="15755" column="27" selection-start-line="15755" selection-start-column="12" selection-end-line="15755" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="884" column="48" lean-forward="true" selection-start-line="884" selection-start-column="48" selection-end-line="884" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../05Month/metro0610/ptpop-iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4312">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../05Month/metrotest2/ptpop.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../05Month/metrotest2/ptpop-iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5324">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/app.js" />
+    <entry file="file://$PROJECT_DIR$/../metrotest2/ptpop-iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="201" column="12" selection-start-line="201" selection-start-column="12" selection-end-line="202" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Documents/Tencent Files/916221479/FileRecv/ppt/index.html" />
+    <entry file="file://$PROJECT_DIR$/index-iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/app2.js" />
+    <entry file="file://$PROJECT_DIR$/ptpop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="362" column="25" lean-forward="true" selection-start-line="362" selection-start-column="25" selection-end-line="362" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ptpop-iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="427" column="97" lean-forward="true" selection-start-line="427" selection-start-column="97" selection-end-line="427" selection-end-column="97" />
+          <folding>
+            <element signature="n#defs#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
