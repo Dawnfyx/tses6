@@ -22,7 +22,7 @@ self.requirePlugin = AFAppX.requirePlugin;
 
 function success() {
 require('../../client/app');
-require('../../client/pages/index/index');
+require('../../client/pages/lifeCycle/index');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

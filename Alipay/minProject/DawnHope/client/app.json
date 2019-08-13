@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/lifeCycle/index"
   ],
   "window": {
     "defaultTitle": "My App"
