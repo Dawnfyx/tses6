@@ -1,0 +1,35 @@
+<!-- <navigator 
+  class="demo-words"
+  hover-class="font-color"
+  hover-start-time="1000"
+  hover-stay-time="2000"
+  url="/pages/others/hello/hello"
+  >
+  页面跳转(默认navigate)
+</navigator>
+
+<navigator 
+  class="demo-words"
+  hover-class="font-color"
+  hover-start-time="1000"
+  hover-stay-time="2000"
+  url="/pages/others/hello/hello"
+  open-type="redirect"
+  >
+  页面跳转(redirect)
+</navigator> -->
+
+<navigator 
+  class="demo-words"
+  hover-class="font-color"
+  hover-start-time="1000"
+  hover-stay-time="2000"
+  url="/pages/index/index"
+  open-type="switchTab"
+  >
+  页面跳转到首页(switchTab)
+</navigator>
+
+<!-- <view class="demo-words" onTap="navigateTOPage">
+  导航api跳转
+</view> -->

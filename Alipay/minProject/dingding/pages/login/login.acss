@@ -1,0 +1,10 @@
+page {
+  background-color: #d9d4d4;
+}
+
+.login-box{
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}

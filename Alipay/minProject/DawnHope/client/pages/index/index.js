@@ -1,3 +1,5 @@
+const app = getApp();
+
 Page({
   onLoad(query) {
     // 页面加载

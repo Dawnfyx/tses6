@@ -22,8 +22,8 @@ self.requirePlugin = AFAppX.requirePlugin;
 
 function success() {
 require('../../client/app');
+require('../../client/pages/components/SSwitch/SSwitch');
 require('../../client/pages/index/index');
-require('../../client/pages/lifeCycle/lifeCycle');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

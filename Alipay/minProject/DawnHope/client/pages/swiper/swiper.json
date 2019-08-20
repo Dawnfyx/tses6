@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+      "s-switch": "/pages/components/SSwitch/SSwitch"
+  }
+}

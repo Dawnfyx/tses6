@@ -1,0 +1,32 @@
+
+<view class="login-box">
+    <view class="login-title" >
+
+    </view>
+    <view class="login-body">
+        <form>
+            <view class="form-group">
+              <label for="loginUser">
+                <text> 姓名: </text>
+              </label>
+              <input class="input" id="loginUser" onInput="bindKeyInput" placeholder="username" />
+            </view>
+            <view class="form-group">
+              <label for="loginPHone">
+                <text> 手机: </text>
+              </label>
+              <input class="input" id="loginPhone" onInput="bindKeyInput" placeholder="phone" />
+            </view>
+            <view class="form-group">
+              <label for="loginPHone">
+                <text> 面试岗位: </text>
+              </label>
+              <input class="input" id="loginPhone" onInput="bindKeyInput" placeholder="phone" />
+            </view>
+            <view class="form-group">
+              <button form-type="reset">reset</button>
+            </view>
+        </form>
+    </view>
+</view>
+

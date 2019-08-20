@@ -14,6 +14,7 @@
         <view class="image-plus-vertical"></view>
       </view>
     </block>
+    
     <view class="page-section-demo">
       <button class="page-body-button" type="primary" onTap="saveFile">保存文件</button>
       <button class="page-body-button" type="primary" onTap="getFileInfo">获取文件信息</button>

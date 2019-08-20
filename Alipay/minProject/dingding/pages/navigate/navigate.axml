@@ -1,0 +1,11 @@
+<view class="navigate-box">
+  
+
+    <view class="page-description">============和谐分割线==========</view>
+    <navigator class="navigate" open-type="navigate" url="./navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+    <navigator class="navigate" open-type="switchTab" url="../index/index" hover-class="navigator-hover">跳转到index</navigator>
+    <view class="navigate" onTap="navigateToPage">
+      事件跳转
+    </view>
+</view>
+

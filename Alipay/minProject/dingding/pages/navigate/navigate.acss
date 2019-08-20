@@ -1,0 +1,9 @@
+.navigate-box{
+  padding: 10rpx;
+}
+.navigate{
+  background-color: royalblue; 
+  color: #fff;
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+}

@@ -461,7 +461,7 @@ Page({
     activeTab: 0, 
     basicComponentList,
     extComponentList,
-    titleOpacity: 1,
+    titleOpacity: 0.5,
     shadow: false,
   },
   onPageScroll(e) {

@@ -1,0 +1,7 @@
+<view>
+  test
+</view>
+<view>{{title}}</view>
+<view>{{array[0].user}}</view>
+<view>看我变变变 === {{text}}</view>
+<button onTap="changeText"> Change normal data </button>

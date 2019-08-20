@@ -1,1 +1,6 @@
-{}
+{
+  "component": true, 
+  "usingComponents": {
+    "ex-switch": "/pages/components/SSwitch/SSwitch"
+  }
+}

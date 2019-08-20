@@ -1,0 +1,14 @@
+swiper{
+  background-color: #000000;
+}
+
+.swiper-item{
+  display: block;
+  height: 150px;
+  margin:10px;
+  color: #fff;
+}
+
+.margin-t {
+  margin-top: 24px;
+}

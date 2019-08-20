@@ -1,0 +1,5 @@
+<view>
+  <s-switch label="switch开关" checked="{{true}}" onChange="switchChange"></s-switch>
+</view>
+
+
