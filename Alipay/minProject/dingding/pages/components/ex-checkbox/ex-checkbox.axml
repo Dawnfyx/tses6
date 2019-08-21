@@ -1,0 +1,7 @@
+<checkbox-group onChange="checkboxChange" name="第{{titleNum}}题">
+  <view>{{titleNum}}、 {{examSubject.title}}</view>
+  <label class="checkbox" a:for="{{examSubject.option}}" key="label-{{index}}">
+    <checkbox value="{{examSubject.option[index].name}}" checked="{{examSubject.option[index].checked}}" disabled="{{item.disabled}}" />
+    <text class="checkbox-text">{{examSubject.option[index].value}}</text>
+  </label>
+</checkbox-group>

@@ -1,7 +1,7 @@
 
 <view class="login-box">
     <view class="login-title" >
-
+        考试系统
     </view>
     <view class="login-body">
         <form>
@@ -9,22 +9,22 @@
               <label for="loginUser">
                 <text> 姓名: </text>
               </label>
-              <input class="input" id="loginUser" onInput="bindKeyInput" placeholder="username" />
+              <input class="input" id="loginUser" onInput="bindKeyInput" placeholder="请输入用户名" />
             </view>
             <view class="form-group">
               <label for="loginPHone">
                 <text> 手机: </text>
               </label>
-              <input class="input" id="loginPhone" onInput="bindKeyInput" placeholder="phone" />
+              <input class="input" id="loginPhone" onInput="bindKeyInput" placeholder="请输入手机号" />
             </view>
             <view class="form-group">
               <label for="loginPHone">
                 <text> 面试岗位: </text>
               </label>
-              <input class="input" id="loginPhone" onInput="bindKeyInput" placeholder="phone" />
+              <input class="input" id="loginPhone" onInput="bindKeyInput" placeholder="请选择岗位" />
             </view>
             <view class="form-group">
-              <button form-type="reset">reset</button>
+              <button class="btn-success" type="default" onTap="navigateToPage">进入考试</button>
             </view>
         </form>
     </view>

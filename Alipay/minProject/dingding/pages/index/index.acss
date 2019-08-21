@@ -1,0 +1,6 @@
+
+.exam-body .radio-group{
+  border-width: 1rpx;
+  border-style: solid;
+  border-color: red;
+}

@@ -1,3 +1,7 @@
 {
-  "defaultTitle": "my app index pages"
+  "defaultTitle": "my app index pages",
+  "usingComponents": {
+    "ex-radio":"../components/ex-radio/ex-radio",
+    "ex-checkbox":"../components/ex-checkbox/ex-checkbox"
+  }
 }

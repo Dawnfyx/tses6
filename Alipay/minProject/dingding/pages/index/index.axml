@@ -1,5 +1,37 @@
 <view class="container">
-  this is a blan
-  在这里
-
+  this is index pages
+  
+  <form onSubmit="onSubmit">
+    <view class="exam-header">
+      <view class="navbar">
+        <view class="navbar-brand">
+            标题
+        </view>
+        <view class="navbar-nav">
+          <view>姓名： {{userInfo.name}}</view>
+          <view>手机： {{userInfo.phone}}</view>
+          <view>职位： {{userInfo.work}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="exam-body">
+        <list>
+          <block a:for="{{examSubject}}" index="{{index}}" key="items-{{index}}">
+          <list-item a:if="{{examSubject[index].type === 1}}">
+            <ex-radio examSubject="{{examSubject[index]}}" titleNum="{{index + 1}}"></ex-radio>
+          </list-item>
+          <list-item a:elif="{{examSubject[index].type === 2}}">
+           <ex-checkbox examSubject="{{examSubject[index]}}" titleNum="{{index + 1}}"></ex-checkbox>
+          </list-item>
+          </block>
+        </list>
+    </view>
+    <view class="exam-footer">
+      <button size="default" type="primary" formType="submit">提  交</button>
+    </view>
+  
+  </form>
 </view>
+
+
+

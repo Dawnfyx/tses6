@@ -1,0 +1,8 @@
+
+<radio-group class="radio-group" onChange="radioChange" name="第{{titleNum}}题">
+  <view>{{titleNum}}、 题目题目 {{examSubject.title}}</view>
+  <label class="radio" a:for="{{examSubject.option}}" key="label-{{index}}">
+    <radio value="{{examSubject.option[index].name}}" checked="{{examSubject.option[index].checked}}"/>
+    <text class="radio-text">{{examSubject.option[index].value}}</text>
+  </label>
+</radio-group>

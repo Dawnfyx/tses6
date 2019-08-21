@@ -9,6 +9,7 @@ Page({
       },
       dataType: 'json',
       success: function(res) {
+        console.log(res);
         my.alert({content: JSON.stringify(res)});
       },
       fail: function(res) {
