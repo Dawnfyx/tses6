@@ -1,6 +1,10 @@
+
 .radio {
   display: block;
   margin-bottom: 20rpx;
+}
+radio:checked{
+  color: red;
 }
 .radio-text {
   line-height: 1.8;

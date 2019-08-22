@@ -2,6 +2,7 @@
   "defaultTitle": "my app index pages",
   "usingComponents": {
     "ex-radio":"../components/ex-radio/ex-radio",
-    "ex-checkbox":"../components/ex-checkbox/ex-checkbox"
+    "ex-checkbox":"../components/ex-checkbox/ex-checkbox",
+    "ex-time-compter": "../components/ex-time-compter/ex-time-compter"
   }
 }

@@ -1,0 +1,6 @@
+.down-compter-time{
+  padding: 30rpx 0rpx;
+  font-size: 40rpx;
+  font-family: 'Microsoft YaHei';
+  border-bottom: 1px solid #efefef;
+}

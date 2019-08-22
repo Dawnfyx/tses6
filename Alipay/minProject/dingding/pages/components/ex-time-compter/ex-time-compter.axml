@@ -1,0 +1,3 @@
+<view class="down-compter-time" id="down-compter-time">
+  倒计时: {{dctNumber}}
+</view>

@@ -1,6 +1,64 @@
-
-.exam-body .radio-group{
-  border-width: 1rpx;
-  border-style: solid;
-  border-color: red;
+#userinfo{
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  color: #333333;
+  margin-bottom: 40rpx;
 }
+#userinfo .navbar-brand{
+  padding: 30rpx 0rpx 30rpx 30rpx;
+  font-size: 40rpx;
+}
+#userinfo .navbar-nav{
+  border-top-width: 1rpx;
+  border-top-style: solid;
+  border-top-color: #e7e7e7;
+  border-bottom-width: 1rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #e7e7e7;
+}
+
+#userinfo .navbar-nav .view{
+  padding: 20rpx 30rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.exam-body{
+  background-color: #ffffff;
+  padding: 0 40rpx;
+}
+
+.exam-body .radio-group,
+.exam-body .checkbox-group{
+  border-bottom-width: 1rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #efefef;
+}
+.radio-group .radio,
+.checkbox-group .checkbox{
+  padding: 0 30rpx;
+}
+
+.checkbox-title{
+  font-size: 36rpx;
+  font-weight: 600;
+  padding: 30rpx 0rpx;
+}
+.radio-title{
+  font-size: 36rpx;
+  font-weight: 600;
+  padding: 30rpx 0rpx;
+}
+.exam-footer{
+  padding: 30rpx;
+}
+.exam-footer .submit-btn{
+    /* color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c; */
+    /* background-color: #c9f3c9;
+    border: 1px solid white;
+    color: #30862b; */
+}
+
+

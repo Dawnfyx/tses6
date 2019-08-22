@@ -4,10 +4,11 @@ Page({
       name: 'jack',
       phone: '15012341234',
       work: 'product manager',
+      endTime: '160'
     },
      examSubject: [
       {
-        title: "标题标题标wsagr题标题1111",
+        title: "wsagr题标题1111",
         type: 1,
         option: [
           { name: 'angular', value: 'AngularJS' },
@@ -19,7 +20,7 @@ Page({
         ],
       },
       {
-        title: "标题标题标asgew题标题2222",
+        title: "asgew题标题2222",
         type: 2,
         option: [
           { name: '1234', value: '1234'},
@@ -31,7 +32,7 @@ Page({
         ],
       },
       {
-        title: "标题标题标sdgdfh题标题3333",
+        title: "sdgdfh题标题3333",
         type: 1,
         option: [
           { name: 'angular', value: 'AngularJS' },
@@ -43,7 +44,7 @@ Page({
         ],
       },
       {
-        title: "标题标题标sdgdfh题标题4444",
+        title: "sdgdfh题标题4444",
         type: 1,
         option: [
           { name: 'angular', value: 'AngularJS' },
@@ -55,7 +56,7 @@ Page({
         ],
       },
       {
-        title: "标题标题标sdgdfh题标题5555",
+        title: "sdgdfh题标题5555",
         type: 2,
         option: [
           { name: '11111', value: '11111'},
@@ -71,26 +72,26 @@ Page({
   onLoad(query) {
     // 页面加载
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
-    my.httpRequest({
-      url: 'http://www.imoocdsp.com/index/carousels',
-      method: 'POST',
-      data: {
-        from: '支付宝',
-        production: 'AlipayJSAPI',
-      },
-      dataType: 'json',
-      success: function(res) {
-        // my.alert({content: res});
-        console.log(JSON.stringify(res));
-      },
-      fail: function(res) {
-        my.alert({content: 'fail' + res});
-      },
-      complete: function(res) {
-        // my.hideLoading();
-        // my.alert({content: 'complete'});
-      }
-    });
+    // my.httpRequest({
+    //   url: 'http://www.imoocdsp.com/index/carousels',
+    //   method: 'POST',
+    //   data: {
+    //     from: '支付宝',
+    //     production: 'AlipayJSAPI',
+    //   },
+    //   dataType: 'json',
+    //   success: function(res) {
+    //     // my.alert({content: res});
+    //     console.log(JSON.stringify(res));
+    //   },
+    //   fail: function(res) {
+    //     my.alert({content: 'fail' + res});
+    //   },
+    //   complete: function(res) {
+    //     // my.hideLoading();
+    //     // my.alert({content: 'complete'});
+    //   }
+    // });
   },
   onReady() {
     // 页面加载完成
@@ -125,6 +126,7 @@ Page({
     // my.alert({
     //   content: e.detail.value,
     // });
+    //debugger
     console.log('onSubmit', e.detail);
   },
   onReset(e) {
