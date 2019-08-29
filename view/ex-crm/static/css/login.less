@@ -1,0 +1,229 @@
+
+/*
+* @Author:              fangyaxi
+* @Date:                2019-08-28
+* @Last Modified by:    fangyaxi
+* @Last Modified time:  2019-08-28
+*/
+
+//颜色
+@clWhite: #ffffff;
+@clMain: #e53028;
+@clBorder: #cccccc;
+@clTitleGray: #bababa;
+@lrWidth: 500px;
+
+
+.fontsize(@size: 30px){
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: @size;
+}
+html,
+body{
+  margin:0;
+  padding:0;
+  height: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+input{
+  outline:0 none;border: none;
+}
+#wrapper{
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1920px;
+  height: 100%;
+  min-height: 650px;
+  overflow: hidden;
+
+  .login-banner{
+    width: calc(100% - @lrWidth);
+    height: 100%;
+    float: left;
+
+    .banner-bg{
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      position: relative;
+
+      .bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+
+        & > p {
+          line-height: 50px;
+          text-align: right;
+          .fontsize(30px);
+          color: @clWhite;
+          padding-right: 70px;
+          margin-bottom: 140px;
+        }
+        .first{
+        margin-bottom: 5px;
+        }
+        .hr{
+        width: 100%;
+        height: 70px;
+        background-color: @clMain;
+        opacity: 0.5;
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        }
+        .hr-text{
+          position: absolute;
+          z-index: 2;
+          right: 0px;
+          bottom: 55px;
+          padding-right: 70px;
+          .fontsize(40px);
+          font-weight: 600;
+          color: @clWhite;
+        }
+      }
+    }
+  }
+  .login{
+    width: @lrWidth;
+    height: 100%;
+    padding: 90px 60px;
+    position: relative;
+    float: left;
+
+    .login-box{
+      width: 100%;
+
+      .login-title{
+        .fontsize(36px);
+        font-weight: 600;
+        color: @clMain;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .login-item{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+      label{
+        .fontsize(18px);
+        color: @clTitleGray;
+      }
+      .input-group{
+        width: 100%;
+        border-bottom:  1px solid @clBorder;
+
+        input{
+          width: 70%;
+          height: 50px;
+          line-height: 50px;
+          font-size: 24px;
+          padding-left: 10%;
+          float: left;
+        }
+      }
+      .login-btn{
+        width: 380px;
+        height: 40px;
+        background-color: @clMain;
+        border: 0 none;
+        border-radius: 5px;
+        color: @clWhite;
+        .fontsize(18px);
+        cursor: pointer;
+      }
+      .login-copyright{
+        width: 380px;
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+
+        a{
+          text-decoration: none;
+          color: #666666;
+        }
+      }
+    }
+  }
+
+}
+
+
+.icon{
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+
+  &.icon-user{
+    background-image: url("../img/l-user.png");
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &.icon-pass{
+    background-image: url("../img/l-pass.png");
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &.icon-close{
+    background-image: url("../img/l-close.png");
+    margin-top: 10px;
+    cursor: pointer;
+    float: right;
+  }
+  &.icon-eye{
+    background-image: url("../img/l-eye.png");
+    margin-top: 10px;
+    cursor: pointer;
+    float: right;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-height: 790px) {
+  #wrapper .login{
+    padding-top: 8%;
+  }
+}
+
+
+//错误提醒
+.error_info{
+  margin-top: -30px;
+  height: 60px;
+  color: #e53028;
+  display: none;
+}
+
+//IE过滤
+#isIE{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  z-index: 10002;
+  top: 0;
+  left: 0;
+
+  .box{
+    padding: 10%;
+    margin: 0px auto;
+    font-size: 40px;
+    li{
+      color: #fff;
+    }
+  }
+}
+

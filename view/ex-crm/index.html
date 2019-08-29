@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>ex-crm</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>安吉物流--登录</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/l-icon.ico" id="favicon">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+      <!-- Bootstrap -->
+      <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!--用于清除浏览器一些默认样式-->
+      <!--<link href="static/css/reset.css" rel="stylesheet">-->
+      <!--login样式表-->
+      <link href="static/css/login.css" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+      <div id="wrapper">
+          <div class="login-banner">
+              <div class="banner-bg" style="background-image: url('static/img/l-banner.png')">
+                  <img src="static/img/l-logo.png" class="img-responsive" alt="四川安吉物流">
+                  <div class="bottom">
+                      <p class="first">CUSTOMER</p>
+                      <p>RELATIONSHIP MANAGEMENT SYSTEM</p>
+                      <div class="hr"></div>
+                      <div class="hr-text">客户关系管理系统</div>
+                  </div>
+              </div>
+          </div>
+          <div class="login">
+              <div class="login-box">
+                  <div class="login-title"> 安吉物流 <span>CRM</span></div>
+                  <div class="login-form">
+                      <div class="login-item">
+                          <label for="username">账号</label>
+                          <div class="input-group">
+                              <span class="icon icon-user"></span>
+                              <input type="text" class="username" id="username">
+                              <span class="icon icon-close"></span>
+                          </div>
+                      </div>
+                      <div class="login-item">
+                          <label for="password">密码</label>
+                          <div class="input-group">
+                              <span class="icon icon-pass"></span>
+                              <input type="password" class="password" id="password">
+                              <span class="icon icon-eye"></span>
+                          </div>
+                      </div>
+                      <button type="submit" class="login-btn"> 登 &nbsp; &nbsp; 录 </button>
+                  </div>
+                  <div class="login-copyright"><a href="http://www.ewpower.com.cn/" target="_blank">优文途新科技（上海）有限公司 提供技术支持</a></div>
+              </div>
+          </div>
+          <div class="clearfix"></div>
+      </div>
+
   </body>
 </html>

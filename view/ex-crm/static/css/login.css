@@ -1,0 +1,198 @@
+/*
+* @Author:              fangyaxi
+* @Date:                2019-08-28
+* @Last Modified by:    fangyaxi
+* @Last Modified time:  2019-08-28
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+input {
+  outline: 0 none;
+  border: none;
+}
+#wrapper {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1920px;
+  height: 100%;
+  min-height: 650px;
+  overflow: hidden;
+}
+#wrapper .login-banner {
+  width: calc(100% - 500px);
+  height: 100%;
+  float: left;
+}
+#wrapper .login-banner .banner-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+#wrapper .login-banner .banner-bg .bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+#wrapper .login-banner .banner-bg .bottom > p {
+  line-height: 50px;
+  text-align: right;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 70px;
+  margin-bottom: 140px;
+}
+#wrapper .login-banner .banner-bg .bottom .first {
+  margin-bottom: 5px;
+}
+#wrapper .login-banner .banner-bg .bottom .hr {
+  width: 100%;
+  height: 70px;
+  background-color: #e53028;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+}
+#wrapper .login-banner .banner-bg .bottom .hr-text {
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  bottom: 55px;
+  padding-right: 70px;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+#wrapper .login {
+  width: 500px;
+  height: 100%;
+  padding: 90px 60px;
+  position: relative;
+  float: left;
+}
+#wrapper .login .login-box {
+  width: 100%;
+}
+#wrapper .login .login-box .login-title {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #e53028;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#wrapper .login .login-box .login-item {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#wrapper .login .login-box label {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 18px;
+  color: #bababa;
+}
+#wrapper .login .login-box .input-group {
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+#wrapper .login .login-box .input-group input {
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  padding-left: 10%;
+  float: left;
+}
+#wrapper .login .login-box .login-btn {
+  width: 380px;
+  height: 40px;
+  background-color: #e53028;
+  border: 0 none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+#wrapper .login .login-box .login-copyright {
+  width: 380px;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+#wrapper .login .login-box .login-copyright a {
+  text-decoration: none;
+  color: #666666;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+.icon.icon-user {
+  background-image: url("../img/l-user.png");
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.icon.icon-pass {
+  background-image: url("../img/l-pass.png");
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.icon.icon-close {
+  background-image: url("../img/l-close.png");
+  margin-top: 10px;
+  cursor: pointer;
+  float: right;
+}
+.icon.icon-eye {
+  background-image: url("../img/l-eye.png");
+  margin-top: 10px;
+  cursor: pointer;
+  float: right;
+}
+@media (max-height: 790px) {
+  #wrapper .login {
+    padding-top: 8%;
+  }
+}
+.error_info {
+  margin-top: -30px;
+  height: 60px;
+  color: #e53028;
+  display: none;
+}
+#isIE {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  z-index: 10002;
+  top: 0;
+  left: 0;
+}
+#isIE .box {
+  padding: 10%;
+  margin: 0px auto;
+  font-size: 40px;
+}
+#isIE .box li {
+  color: #fff;
+}
+/*# sourceMappingURL=login.css.map */
