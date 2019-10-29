@@ -7,3 +7,5 @@ class Time{
         }
     }
 }
+
+export default Timer

@@ -1,2 +1,4 @@
-let ss = 0;
-console.log(ss);
+class Base{
+
+}
+export default Base
