@@ -15,6 +15,9 @@
 ### test 
 > es6 编译文件
 
+### tool-babelrc
+> es6编译工具babelrc
+
 ### practice
 > 一个ES6编译器和一些ES6练习
 
