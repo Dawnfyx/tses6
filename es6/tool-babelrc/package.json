@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"babel src -d dest"
+    "build": "babel src -d dest"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
     "@babel/cli": "^7.6.3",
     "@babel/core": "^7.6.3",
     "@babel/preset-env": "^7.6.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
   }
 }
