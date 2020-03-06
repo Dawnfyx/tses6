@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        #site-landing {
+            position:relative;
+            height: 100%;
+            width: 100%;
+           background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+      </style>
+</head>
+<body>
+
+    <div id="site-landing">
+    </div>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/polygonizr2.js"></script>
+    <script type="text/javascript">
+        $('#site-landing').polygonizr();
+    </script>
+</body>
+</html>
