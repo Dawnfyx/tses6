@@ -4,30 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html, body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            overflow: hidden;
-        }
-        #site-landing {
-            position:relative;
-            height: 100%;
-            width: 100%;
-           background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-        }
-      </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div id="site-landing">
+    <div id="main">
+        <div id="login_form">
+            <div class="login">
+                <div class="login-box">
+                    <div class="login-title"> 用户登录 <span>CRM</span></div>
+                    
+                    <div class="login-form">
+                        <div class="login-item">
+                            <label for="username">账号</label>
+                            <div class="input-group">
+                                <span class="icon icon-user"></span>
+                                <input type="text" class="username" id="username">
+                                <span class="icon icon-close" id="clear_input"></span>
+                            </div>
+                        </div>
+                        <div class="login-item">
+                            <label for="password">密码</label>
+                            <div class="input-group">
+                                <span class="icon icon-pass"></span>
+                                <input type="password" class="password" id="password">
+                                <span class="icon icon-eye1" id="psw_change"></span>
+                            </div>
+                        </div>
+                        <div class="error_info">*&nbsp;<span>密码不正确</span></div>
+                        <button type="submit" class="login-btn" id="login_btn"> 登 &nbsp; &nbsp; 录 </button>
+                    </div>
+                    
+                    <div class="login-copyright"><a href="http://www.ewpower.com.cn/" target="_blank">优文途新科技（上海）有限公司 提供技术支持</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div id="login_banner">
+                <img src="img/bg_banner.png" width="568" height="515" alt="">
+            </div>
+            <div id="login_form_bg">
+            </div>
+            <div id="login_animate_bg">
+            </div>
+        </div>
     </div>
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/polygonizr2.js"></script>
     <script type="text/javascript">
-        $('#site-landing').polygonizr();
+        $('#login_animate_bg').polygonizr();
+
+        // mouseenter() 鼠标进入（进入子元素不触发）
+        // mouseleave() 鼠标离开（离开子元素不触发）
+        $("#main").mouseenter(function(e){
+            console.log("mouseenter");
+            let _this = this;
+            $(_this).mouseover(function(event){
+                //console.log("mousemove", Math.round(event.clientX / 100), Math.round(event.clientY / 100));
+                let numVal = "-";
+                if(Math.random() * 2 >= 1){
+                    numVal = "";
+                }
+
+                $("#login_banner > img").css({
+                    "margin-top":  numVal + event.clientX / 100 + "px",
+                    "margin-left": numVal + event.clientY / 100 + "px",
+                });
+            })
+            
+        }).mouseleave(function(){
+            console.log("mouseleave");
+        })
+
+        $("#clear_input").click(function (event){
+            var event = event || window.event;
+            event.stopPropagation();
+            var $this = $(this);
+            $("#username").val(" ");
+        });
+
+        //点击密码icon  显示／隐藏
+        $('#psw_change').click(function (event) {
+            var event = event || window.event;
+            event.stopPropagation();
+            var $this = $(this);
+            $this.toggleClass('psw_show');
+            //如果当前隐藏  变显示
+            if ($this.hasClass('psw_show')) {
+                $this.removeClass("icon-eye1").addClass("icon-eye2");
+                $this.prev().attr('type', 'text');
+            } else {
+                $this.removeClass("icon-eye2").addClass("icon-eye1");
+                $this.prev().attr('type', 'password');
+            }
+        });
     </script>
 </body>
 </html>

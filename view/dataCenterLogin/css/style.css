@@ -1,0 +1,174 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+#main,
+#main .bg {
+  width: 100%;
+  height: 100%;
+  min-width: 1024px;
+  position: relative;
+  z-index: 0;
+}
+#login_animate_bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  background-image: linear-gradient(to right, #3258bc 0%, #001738 100%);
+}
+#login_animate_bg canvas {
+  background: url(../img/bg_line.png) 0px 0px repeat;
+  opacity: 0.5;
+}
+#login_form_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  transform: skewX(-32deg);
+  position: absolute;
+  z-index: 1;
+  left: 42%;
+}
+#login_banner {
+  position: absolute;
+  z-index: 2;
+  left: 15%;
+  top: 20%;
+}
+#login_banner img {
+  transition: all 2s ease 0s;
+}
+#login_form {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+#login_form .login {
+  width: 380px;
+  height: 800px;
+  margin-left: 240px;
+  display: flex;
+  align-items: center;
+}
+#login_form .login .login-box {
+  width: 100%;
+}
+#login_form .login .login-box .login-title {
+  font-size: 30px;
+  color: #4452d5;
+  margin-bottom: 30px;
+}
+#login_form .login .login-box .login-item {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 40px;
+}
+#login_form .login .login-box .login-item label {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", "sans-serif";
+  font-size: 18px;
+  color: #5f5f5f;
+}
+#login_form .login .login-box .login-item .input-group {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+#login_form .login .login-box .login-item .input-group input {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 22px;
+  float: left;
+}
+#login_form .login .login-box .login-btn {
+  width: 380px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #4452d5;
+  border: 0 none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", "sans-serif";
+  font-size: 18px;
+  cursor: pointer;
+}
+#login_form .login .error_info {
+  margin-top: -30px;
+  height: 60px;
+  color: #e53028;
+  display: none;
+}
+#login_form .login .icon {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  display: block;
+  float: left;
+  position: absolute;
+  z-index: 2;
+}
+#login_form .login .icon.icon-user {
+  background-image: url(../img/l-user.png);
+  margin-bottom: 10px;
+  left: 8px;
+}
+#login_form .login .icon.icon-pass {
+  background-image: url(../img/l-pass.png);
+  margin-bottom: 10px;
+  left: 8px;
+}
+#login_form .login .icon.icon-close {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/l-close.png);
+  margin-top: 12px;
+  cursor: pointer;
+  float: right;
+  right: 10px;
+}
+#login_form .login .icon.icon-eye1 {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/l-eye1.png);
+  margin-top: 12px;
+  cursor: pointer;
+  float: right;
+  right: 5px;
+}
+#login_form .login .icon.icon-eye2 {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/l-eye2.png);
+  margin-top: 12px;
+  cursor: pointer;
+  float: right;
+  right: 5px;
+}
+#login_form .login .login-copyright {
+  width: 400px;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  margin: 0px auto;
+  margin-left: -200px;
+  text-align: center;
+}
+#login_form .login .login-copyright a {
+  text-decoration: none;
+  color: #666;
+}

@@ -10,9 +10,9 @@
     $.fn.polygonizr = function (options) {
         var defaults = {
             // How long to pause in between new node-movements.
-            restNodeMovements: 1,
+            restNodeMovements: 0.5,
             // When the cluster updates, this sets speed of nodes.
-            duration: 3,
+            duration: 5,
             // Define the maximum distance to move nodes.
             nodeMovementDistance: 100,
             // The number of node nodes to print out.
@@ -97,14 +97,64 @@
             // Manages setting up the nodes. //
             ////////////////////////////////////
             function setupClusterNodes() {
-                for (let i = 0; i < settings.numberOfNodes + settings.numberOfUnconnectedNode; i++) {
+                // Distribute the nodes somewhere on our canvas.
+                for (var i = 0; i < settings.numberOfNodes + settings.numberOfUnconnectedNode; i++) {
+                    // Define the variable to hold the current node's position.
                     var currentNode = { x: 0, y: 0 };
+
+                    // Check what cluster formation, and get the position accordingly.
                     if (settings.randomizePolygonMeshNetworkFormation) {
                         currentNode.x = Math.random() * settings.canvasWidth;
                         currentNode.y = Math.random() * settings.canvasHeight;
                     } else {
                         currentNode = settings.specifyPolygonMeshNetworkFormation(i);
                     }
+
+                    // Populate the nodes, and keep the original position to stay close.
+                    nodes.push({
+                        currentX: currentNode.x,
+                        originX: currentNode.x,
+                        startX: currentNode.x,
+                        targetX: currentNode.x,
+                        currentY: currentNode.y,
+                        originY: currentNode.y,
+                        startY: currentNode.x,
+                        targetY: currentNode.y
+                    });
+
+                    // Setup free floating, unconnected dots.
+                    nodes[i].UnconnectedNode = (settings.numberOfUnconnectedNode > i);
+                }
+
+                // For each node find the 3 closest nodes.
+                for (var i = 0; i < nodes.length; i++) {
+                    // Collect the closest nodes.
+                    var closest = [];
+
+                    // Start of with the first node.
+                    var node = nodes[i];
+
+                    // Collect randomly closest nodes.
+                    for (var j = 0; j < nodes.length; j++) {
+                        var tempNode = nodes[j];
+                        if (node != tempNode) {
+                            for (var k = 0; k < settings.nodeRelations; k++) {
+                                if (closest[k] == undefined) {
+                                    closest[k] = tempNode;
+                                    break;
+                                } if (getDistance(node, tempNode) < getDistance(node, closest[k])) {
+                                    closest[k] = tempNode;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    // Set closest node.
+                    node.Closest = closest;
+
+                    // Assigne the alpha level to the current node.
+                    setAlphaLevel(node);
                 }
             }
 
@@ -270,8 +320,6 @@
                 }
             }
 
-
-
             //////////////////////////////////////////////////////////////
             // Calculates a new target possition for a given coordinate //
             //////////////////////////////////////////////////////////////
@@ -327,20 +375,24 @@
             // Handles the line drawings. //
             ////////////////////////////////
             function drawLines(node) {
-                if (!node.nodeLineAlpha > 0 && !node.nodeFillAlpha > 0) return;
-
+                // If not visible, return.
+                if (!node.lineAlpha > 0 && !node.fillAlpha > 0) return;
+                
                 for (var i in node.Closest) {
+                    // Check if we should draw the connection, or if its an unconnected node or if it is too far away.
                     var lineConnection = (node.Closest[i].UnconnectedNode == false && node.UnconnectedNode == false);
                     var drawCloseUnconnection = settings.ConnectUnconnectedNodes == true && getDistance(node, node.Closest[i]) <= settings.ConnectUnconnectedNodesDistance;
-                    if (lineConnection || drawCloseUnconnection) {
+
+                    if (lineConnection || drawCloseUnconnection)
+                    {
                         if (node.lineAlpha > 0) {
                             drawLineNodeConnection(node, i);
                         }
-
+                        
                         if (settings.nodeFillSapce && node.fillAlpha > 0 && lineConnection == true) {
                             drawFillNodeConnection(node, i);
                         }
-                    }
+                    } 
                 }
             }
 
